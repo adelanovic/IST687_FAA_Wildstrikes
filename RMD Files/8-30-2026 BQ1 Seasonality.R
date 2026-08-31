@@ -4,6 +4,8 @@ library(readxl)
 library(tidyverse)
 
 data_file <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/R Files/raw/faa_wildstrike.xlsx"
+chart_dir <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/R Files/Charts/8-30-2026"
+dir.create(chart_dir, showWarnings = FALSE)
 
 cat("Reading data...\n")
 faa_raw <- read_excel(data_file, guess_max = Inf)
@@ -222,6 +224,15 @@ p8 <- ggplot(phase_tbl, aes(MONTH_NAME, pct_of_phase, group = 1)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, size = 6))
 print(p8)
+
+ggsave(file.path(chart_dir, "8-30 wildlife strikes by month.png"), p1, width = 8, height = 5, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 wildlife strikes by season.png"), p2, width = 8, height = 5, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 wildlife strikes by migration period.png"), p3, width = 9, height = 5, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 wildlife strikes by month and year.png"), p4, width = 10, height = 9, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 seasonal pattern by FAA region.png"), p5, width = 12, height = 8, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 seasonal pattern by species group.png"), p6, width = 14, height = 9, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 seasonal pattern by time of day.png"), p7, width = 10, height = 6, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 seasonal pattern by phase of flight.png"), p8, width = 12, height = 8, dpi = 300)
 
 # Raw counts describe reported strikes, not per-flight risk.
 saveRDS(faa, "faa_bq1_seasonality.rds")

@@ -5,7 +5,9 @@ library(dplyr)
 library(ggplot2)
 library(tidyverse)
 
-data_file <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/Data Files/FAA Wildstrike CSV.xlsx"
+data_file <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/R Files/raw/faa_wildstrike.xlsx"
+chart_dir <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/R Files/Charts/8-29-2026"
+dir.create(chart_dir, showWarnings = FALSE)
 
 cat("Reading data...\n")
 
@@ -141,11 +143,13 @@ p5 <- ggplot(year_tbl, aes(x = INCIDENT_YEAR, y = strikes)) +
        x = "Year", y = "Number of Strikes") +
   theme_minimal()
 
-print(p1)
-print(p2)
-print(p3)
-print(p4)
-4lprint(p5)
+print(p5)
+
+ggsave(file.path(chart_dir, "8-29 strikes by month.png"), p1, width = 8, height = 5, dpi = 300)
+ggsave(file.path(chart_dir, "8-29 strikes by season.png"), p2, width = 8, height = 5, dpi = 300)
+ggsave(file.path(chart_dir, "8-29 seasonal pattern by FAA region.png"), p3, width = 12, height = 8, dpi = 300)
+ggsave(file.path(chart_dir, "8-29 seasonal pattern by species.png"), p4, width = 14, height = 9, dpi = 300)
+ggsave(file.path(chart_dir, "8-29 strikes by year.png"), p5, width = 9, height = 5, dpi = 300)
 
 # Save cleaned data for faster reuse
 saveRDS(faa, "faa_bq1.rds")
