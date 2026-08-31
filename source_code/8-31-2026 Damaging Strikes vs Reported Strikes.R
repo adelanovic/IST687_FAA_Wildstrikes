@@ -52,3 +52,37 @@ ggsave(
   height = 6,
   dpi = 300
 )
+
+damaging_strikes_by_species <- faa_raw %>%
+  mutate(
+    DAMAGE = toupper(trimws(as.character(INDICATED_DAMAGE))) %in%
+      c("TRUE", "T", "YES", "Y", "1")
+  ) %>%
+  filter(DAMAGE, !is.na(SPECIES)) %>%
+  count(SPECIES, name = "damaging_strikes", sort = TRUE) %>%
+  slice_head(n = 15)
+
+p2 <- ggplot(
+  damaging_strikes_by_species,
+  aes(x = damaging_strikes, y = reorder(SPECIES, damaging_strikes))
+) +
+  geom_col(fill = "firebrick") +
+  scale_x_continuous(labels = scales::comma) +
+  labs(
+    title = "Species with the Most Damaging Strikes",
+    subtitle = "Top 15 species by number of reported damaging strikes",
+    x = "Number of Damaging Strikes",
+    y = "Species"
+  ) +
+  theme_minimal()
+
+print(damaging_strikes_by_species)
+print(p2)
+
+ggsave(
+  file.path(graph_dir, "damaging strikes by species.png"),
+  p2,
+  width = 10,
+  height = 7,
+  dpi = 300
+)
