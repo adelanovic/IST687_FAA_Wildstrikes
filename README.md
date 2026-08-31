@@ -35,7 +35,7 @@ These are working questions and may evolve as the analysis develops.
 ## Repository Structure
 
 ```
-/Project Updates   Kanban boards and four-quadrant status summaries for updates 1 through 3
+/Project Updates   Three project updates
 /RMD Files         R Markdown notebooks: cleaning, EDA, modeling, and the final write-up
 /Charts            Exported plots and figures used in the report and presentation
 ```
