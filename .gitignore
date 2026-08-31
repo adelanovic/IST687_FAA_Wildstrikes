@@ -1,2 +1,5 @@
 raw/
 *.html
+*.md
+source_code/damage_prediction_model/
+source_code/logistic_regression/
