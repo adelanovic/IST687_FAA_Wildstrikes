@@ -1,6 +1,6 @@
 # FAA Wildlife Strike Analysis: IST 687 Final Project
 
-Analysis of the FAA Wildlife Strike Database in R. All cleaning, modeling, and visualization is done in R. Conclusions are drawn from the dataset itself, not from outside data sources or news reporting.
+Analysis of the FAA Wildlife Strike Database in R. All cleaning, modeling, and visualization is done in R.
 
 ## Dataset
 
