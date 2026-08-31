@@ -35,9 +35,9 @@ These are working questions and may evolve as the analysis develops.
 ## Repository Structure
 
 ```
-/Project Updates   Three project updates
-/RMD Files         R Markdown notebooks: cleaning, EDA, modeling, and the final write-up
-/Charts            Exported plots and figures used in the report and presentation
+/project_updates   Three project updates
+/source_code       R scripts for cleaning, EDA, modeling, and the final analysis
+/graphs            Exported plots and figures used in the report and presentation
 ```
 
 ## Additional Notes

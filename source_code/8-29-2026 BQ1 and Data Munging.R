@@ -5,8 +5,8 @@ library(dplyr)
 library(ggplot2)
 library(tidyverse)
 
-data_file <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/R Files/raw/faa_wildstrike.xlsx"
-chart_dir <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/R Files/Charts/8-29-2026"
+data_file <- "../raw/faa_wildstrike.xlsx"
+chart_dir <- "../graphs/8-29-2026"
 dir.create(chart_dir, showWarnings = FALSE)
 
 cat("Reading data...\n")
