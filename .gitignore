@@ -1,5 +1,6 @@
-raw/
+data/raw/
 *.html
 *.md
 source_code/damage_prediction_model/
 source_code/logistic_regression/
+source_code/species_group_prediction/

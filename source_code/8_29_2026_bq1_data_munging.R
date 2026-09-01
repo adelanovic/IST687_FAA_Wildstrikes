@@ -5,7 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(tidyverse)
 
-data_file <- "../raw/faa_wildstrike.xlsx"
+data_file <- "../data/raw/faa_wildstrike.xlsx"
 chart_dir <- "../graphs/8-29-2026"
 dir.create(chart_dir, showWarnings = FALSE)
 

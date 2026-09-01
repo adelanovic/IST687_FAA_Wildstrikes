@@ -4,7 +4,7 @@ library(readxl)
 library(dplyr)
 library(ggplot2)
 
-data_file <- "../raw/faa_wildstrike.xlsx"
+data_file <- "../data/raw/faa_wildstrike.xlsx"
 graph_dir <- "../graphs/8-31-2026"
 dir.create(graph_dir, showWarnings = FALSE)
 

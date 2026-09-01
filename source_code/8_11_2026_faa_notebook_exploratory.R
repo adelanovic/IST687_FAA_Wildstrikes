@@ -3,8 +3,8 @@
 library(tidyverse)
 library(readxl)
 
-data_file <- "../raw/faa_wildstrike.xlsx"
-dictionary_file <- "../raw/faa_wildstrike_data_dictionary.xls"
+data_file <- "../data/raw/faa_wildstrike.xlsx"
+dictionary_file <- "../data/raw/faa_wildstrike_data_dictionary.xls"
 
 faaWildStrike <- read_excel(data_file, guess_max = Inf)
 
