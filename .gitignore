@@ -4,3 +4,5 @@ data/raw/
 source_code/damage_prediction_model/
 source_code/logistic_regression/
 source_code/species_group_prediction/
+source_code/damage_combinations/
+source_code/damage_combinations_2/
