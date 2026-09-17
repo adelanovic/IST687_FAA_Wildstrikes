@@ -37,6 +37,7 @@ These are working questions and may evolve as the analysis develops.
 ```
 /project_updates   Three project updates
 /source_code       R scripts for cleaning, modeling, and the final analysis
+/data              Raw and cleaned datasets, summary tables, and saved model outputs
 /graphs            Exported plots and figures used in the report and presentation
 ```
 
