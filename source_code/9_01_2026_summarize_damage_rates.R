@@ -1,7 +1,7 @@
 # Summarize the observed damage rates across eligible combinations.
 # The table from 9_01_2026_rank_combinations.R is the primary answer to the business question.
 
-csv_output_dir <- "data/data-output/damage-combinations/csv"
+csv_output_dir <- "data/data_output/damage-combinations/csv"
 dir.create(csv_output_dir, recursive = TRUE, showWarnings = FALSE)
 
 ranked_combinations <- read.csv(

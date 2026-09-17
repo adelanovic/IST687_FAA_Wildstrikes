@@ -4,8 +4,8 @@ library(readxl)
 library(dplyr)
 
 data_file <- "data/raw/faa_wildstrike.xlsx"
-csv_output_dir <- "data/data-output/damage-combinations/csv"
-rds_output_dir <- "data/data-output/damage-combinations/rds"
+csv_output_dir <- "data/data_output/damage-combinations/csv"
+rds_output_dir <- "data/data_output/damage-combinations/rds"
 dir.create(csv_output_dir, recursive = TRUE, showWarnings = FALSE)
 dir.create(rds_output_dir, recursive = TRUE, showWarnings = FALSE)
 
