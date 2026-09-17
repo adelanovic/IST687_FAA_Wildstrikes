@@ -1,24 +1,27 @@
 # BQ1: Do strikes cluster seasonally, and does the pattern differ by species or region?
 
-library(readxl)
 library(tidyverse)
 
-data_file <- "../data/raw/faa_wildstrike.xlsx"
-chart_dir <- "../graphs/8-30-2026"
+data_file <- "data/clean/faa_strikes_clean.rds"
+chart_dir <- "graphs/8-30-2026"
 dir.create(chart_dir, showWarnings = FALSE)
 
 cat("Reading data...\n")
-faa_raw <- read_excel(data_file, guess_max = Inf)
+faa_clean <- readRDS(data_file)
 
 selected_columns <- c(
   "INDEX_NR", "INCIDENT_DATE", "INCIDENT_MONTH", "INCIDENT_YEAR",
   "STATE", "FAAREGION", "SPECIES",
-  "TIME_OF_DAY", "PHASE_OF_FLIGHT"
+  "TIME_OF_DAY_FILLED", "PHASE_OF_FLIGHT"
 )
 
-faa <- faa_raw %>%
+faa <- faa_clean %>%
   select(all_of(selected_columns)) %>%
   mutate(
+    TIME_OF_DAY = factor(
+      replace_na(as.character(TIME_OF_DAY_FILLED), "Unknown"),
+      levels = c("Day", "Night", "Dawn", "Dusk", "Unknown")
+    ),
     INCIDENT_DATE = as.Date(INCIDENT_DATE),
     INCIDENT_MONTH = as.integer(INCIDENT_MONTH),
     INCIDENT_YEAR = as.integer(INCIDENT_YEAR),
@@ -80,7 +83,7 @@ complete_years <- year_coverage %>%
 faa_complete <- faa %>%
   filter(INCIDENT_YEAR %in% complete_years)
 
-cat("Raw:", nrow(faa_raw), "rows x", ncol(faa_raw), "columns\n")
+cat("Cleaned:", nrow(faa_clean), "rows x", ncol(faa_clean), "columns\n")
 cat("Analysis rows:", nrow(faa), "\n")
 cat("Year range:", min(faa$INCIDENT_YEAR), "-", max(faa$INCIDENT_YEAR), "\n")
 cat("Complete years:", min(complete_years), "-", max(complete_years), "\n\n")
@@ -196,8 +199,7 @@ p6 <- ggplot(species_tbl, aes(MONTH_NAME, pct_of_species, group = 1)) +
 print(p6)
 
 # Operational and environmental seasonal patterns.
-time_tbl <- faa_complete %>%
-  filter(!is.na(TIME_OF_DAY), trimws(as.character(TIME_OF_DAY)) != "") %>%
+time_tbl <- faa %>%
   count(TIME_OF_DAY, MONTH_NAME, name = "strikes") %>%
   group_by(TIME_OF_DAY) %>%
   mutate(pct_of_time = 100 * strikes / sum(strikes)) %>%
@@ -205,7 +207,12 @@ time_tbl <- faa_complete %>%
 
 p7 <- ggplot(time_tbl, aes(MONTH_NAME, pct_of_time, color = TIME_OF_DAY, group = TIME_OF_DAY)) +
   geom_line(linewidth = 0.8) +
-  labs(title = "Seasonal Pattern by Time of Day", x = "Month", y = "% of Time-of-Day Group") +
+  scale_color_manual(values = c(Day = "goldenrod", Night = "steelblue4",
+                                Dawn = "lightsalmon", Dusk = "mediumpurple3",
+                                Unknown = "gray60")) +
+  labs(title = "Seasonal Pattern by Time of Day",
+       subtitle = "Each line's monthly percentages sum to 100%",
+       x = "Month", y = "% of Time-of-Day Group", color = "Time of day") +
   theme_minimal()
 print(p7)
 
