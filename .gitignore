@@ -1,6 +1,7 @@
 data/raw/
 data/r_library/
 data/models/
+notes/
 *.html
 *.md
 source_code/damage_prediction_model/
