@@ -1,0 +1,245 @@
+"SPECIES_GROUP","PHASE_OF_FLIGHT","TIME_OF_DAY","reported_strikes","damaging_strikes","damage_rate"
+"Birds of prey","En Route","Dawn",1,1,1
+"Birds of prey","Taxi","Dawn",1,1,1
+"Non-bird wildlife","Parked","Day",1,1,1
+"Non-bird wildlife","Parked","Dusk",1,1,1
+"Pigeons and doves","En Route","Dawn",1,1,1
+"Pigeons and doves","En Route","Dusk",1,1,1
+"Water birds","Departure","Dawn",1,1,1
+"Birds of prey","En Route","Day",392,316,0.806122448979592
+"Water birds","Descent","Day",27,21,0.777777777777778
+"Water birds","En Route","Night",245,188,0.76734693877551
+"Water birds","En Route","Day",199,150,0.753768844221106
+"Water birds","En Route","Dusk",28,21,0.75
+"Gulls and shorebirds","En Route","Dawn",4,3,0.75
+"Birds of prey","En Route","Dusk",3,2,0.666666666666667
+"Water birds","Local","Dusk",3,2,0.666666666666667
+"Birds of prey","En Route","Night",11,7,0.636363636363636
+"Birds of prey","Descent","Night",8,5,0.625
+"Water birds","En Route","Dawn",8,5,0.625
+"Gulls and shorebirds","En Route","Day",156,97,0.621794871794872
+"Non-bird wildlife","Landing Roll","Dusk",132,82,0.621212121212121
+"Water birds","Climb","Night",444,273,0.614864864864865
+"Water birds","Descent","Night",58,35,0.603448275862069
+"Gulls and shorebirds","En Route","Dusk",10,6,0.6
+"Water birds","Climb","Dusk",99,56,0.565656565656566
+"Water birds","Climb","Dawn",106,56,0.528301886792453
+"Water birds","Climb","Day",865,455,0.526011560693642
+"Non-bird wildlife","Climb","Dusk",13,6,0.461538461538462
+"Pigeons and doves","En Route","Day",13,6,0.461538461538462
+"Water birds","Approach","Dusk",274,125,0.456204379562044
+"Water birds","Approach","Night",2194,983,0.448040109389243
+"Non-bird wildlife","Take-off Run","Dusk",59,25,0.423728813559322
+"Birds of prey","Climb","Day",1409,580,0.411639460610362
+"Non-bird wildlife","Landing Roll","Day",413,165,0.399515738498789
+"Water birds","Approach","Dawn",109,40,0.36697247706422
+"Water birds","Take-off Run","Dawn",80,29,0.3625
+"Water birds","Approach","Day",1494,539,0.360776439089692
+"Non-bird wildlife","Landing Roll","Night",1424,512,0.359550561797753
+"Water birds","Take-off Run","Dusk",51,18,0.352941176470588
+"Non-bird wildlife","Climb","Day",34,12,0.352941176470588
+"Birds of prey","Approach","Day",2917,996,0.341446691806651
+"Gulls and shorebirds","En Route","Night",45,15,0.333333333333333
+"Birds of prey","Climb","Dusk",42,14,0.333333333333333
+"Birds of prey","Descent","Day",30,10,0.333333333333333
+"Birds of prey","Local","Dawn",3,1,0.333333333333333
+"Gulls and shorebirds","Arrival","Dusk",3,1,0.333333333333333
+"Gulls and shorebirds","Departure","Dusk",3,1,0.333333333333333
+"Non-bird wildlife","Arrival","Day",3,1,0.333333333333333
+"Gulls and shorebirds","Descent","Night",34,11,0.323529411764706
+"Non-bird wildlife","Take-off Run","Night",533,172,0.322701688555347
+"Water birds","Arrival","Day",13,4,0.307692307692308
+"Pigeons and doves","En Route","Night",24,7,0.291666666666667
+"Water birds","Take-off Run","Night",163,46,0.282208588957055
+"Water birds","Landing Roll","Dusk",96,27,0.28125
+"Birds of prey","Climb","Dawn",40,11,0.275
+"Non-bird wildlife","Climb","Night",98,25,0.255102040816327
+"Gulls and shorebirds","Descent","Day",55,14,0.254545454545455
+"Gulls and shorebirds","Climb","Dawn",162,41,0.253086419753086
+"Gulls and shorebirds","Climb","Dusk",87,22,0.252873563218391
+"Gulls and shorebirds","Climb","Day",1707,428,0.250732278851787
+"Birds of prey","Local","Night",12,3,0.25
+"Water birds","Arrival","Night",8,2,0.25
+"Other birds","En Route","Dawn",4,1,0.25
+"Pigeons and doves","Descent","Night",21,5,0.238095238095238
+"Pigeons and doves","Climb","Night",55,13,0.236363636363636
+"Non-bird wildlife","Landing Roll","Dawn",39,9,0.230769230769231
+"Gulls and shorebirds","Climb","Night",206,46,0.223300970873786
+"Non-bird wildlife","Take-off Run","Dawn",95,21,0.221052631578947
+"Water birds","Take-off Run","Day",863,187,0.216685979142526
+"Non-bird wildlife","Approach","Dusk",88,19,0.215909090909091
+"Non-bird wildlife","Take-off Run","Day",331,71,0.214501510574018
+"Water birds","Landing Roll","Night",238,51,0.214285714285714
+"Water birds","Departure","Day",33,7,0.212121212121212
+"Non-bird wildlife","Climb","Dawn",5,1,0.2
+"Water birds","Descent","Dusk",5,1,0.2
+"Water birds","Local","Night",5,1,0.2
+"Other birds","En Route","Night",209,40,0.191387559808612
+"Water birds","Local","Day",16,3,0.1875
+"Non-bird wildlife","Local","Day",17,3,0.176470588235294
+"Birds of prey","Take-off Run","Dusk",127,22,0.173228346456693
+"Birds of prey","Climb","Night",104,18,0.173076923076923
+"Birds of prey","Approach","Dusk",129,22,0.170542635658915
+"Water birds","Landing Roll","Dawn",42,7,0.166666666666667
+"Non-bird wildlife","Taxi","Day",30,5,0.166666666666667
+"Birds of prey","Departure","Night",6,1,0.166666666666667
+"Birds of prey","Departure","Day",86,14,0.162790697674419
+"Pigeons and doves","Climb","Dusk",68,11,0.161764705882353
+"Other birds","En Route","Day",165,26,0.157575757575758
+"Water birds","Landing Roll","Day",755,118,0.156291390728477
+"Birds of prey","Arrival","Night",13,2,0.153846153846154
+"Birds of prey","Take-off Run","Dawn",140,21,0.15
+"Pigeons and doves","Climb","Day",834,122,0.146282973621103
+"Non-bird wildlife","En Route","Dusk",7,1,0.142857142857143
+"Non-bird wildlife","Taxi","Night",65,9,0.138461538461538
+"Other birds","En Route","Dusk",15,2,0.133333333333333
+"Gulls and shorebirds","Approach","Day",3186,422,0.132454488386692
+"Birds of prey","Approach","Night",521,69,0.132437619961612
+"Gulls and shorebirds","Approach","Dusk",282,37,0.131205673758865
+"Birds of prey","Take-off Run","Night",271,35,0.129151291512915
+"Birds of prey","Take-off Run","Day",2214,279,0.126016260162602
+"Non-bird wildlife","Arrival","Night",16,2,0.125
+"Other birds","Local","Night",16,2,0.125
+"Birds of prey","Local","Day",98,12,0.122448979591837
+"Non-bird wildlife","Approach","Day",247,29,0.117408906882591
+"Gulls and shorebirds","Take-off Run","Dawn",281,32,0.113879003558719
+"Gulls and shorebirds","Take-off Run","Day",3124,341,0.109154929577465
+"Other birds","Climb","Night",470,51,0.108510638297872
+"Non-bird wildlife","Local","Night",37,4,0.108108108108108
+"Gulls and shorebirds","Approach","Night",1417,151,0.106563161609033
+"Gulls and shorebirds","Approach","Dawn",166,17,0.102409638554217
+"Birds of prey","Approach","Dawn",59,6,0.101694915254237
+"Gulls and shorebirds","Departure","Night",10,1,0.1
+"Gulls and shorebirds","Take-off Run","Night",236,22,0.0932203389830508
+"Pigeons and doves","Take-off Run","Night",126,11,0.0873015873015873
+"Birds of prey","Landing Roll","Dawn",69,6,0.0869565217391304
+"Water birds","Taxi","Day",35,3,0.0857142857142857
+"Gulls and shorebirds","Local","Night",12,1,0.0833333333333333
+"Water birds","Taxi","Night",12,1,0.0833333333333333
+"Pigeons and doves","Approach","Day",1647,134,0.0813600485731633
+"Other birds","Descent","Night",317,25,0.0788643533123028
+"Birds of prey","Landing Roll","Night",693,54,0.0779220779220779
+"Pigeons and doves","Descent","Day",13,1,0.0769230769230769
+"Gulls and shorebirds","Take-off Run","Dusk",144,11,0.0763888888888889
+"Pigeons and doves","Take-off Run","Dusk",162,12,0.0740740740740741
+"Pigeons and doves","Departure","Day",70,5,0.0714285714285714
+"Non-bird wildlife","Approach","Dawn",14,1,0.0714285714285714
+"Pigeons and doves","Take-off Run","Day",2071,146,0.0704973442781265
+"Birds of prey","Landing Roll","Day",2599,183,0.070411696806464
+"Other birds","Arrival","Night",43,3,0.0697674418604651
+"Pigeons and doves","Approach","Night",306,20,0.065359477124183
+"Water birds","Departure","Night",16,1,0.0625
+"Other birds","Climb","Dawn",230,14,0.0608695652173913
+"Pigeons and doves","Climb","Dawn",84,5,0.0595238095238095
+"Birds of prey","Arrival","Day",51,3,0.0588235294117647
+"Gulls and shorebirds","Arrival","Day",35,2,0.0571428571428571
+"Non-bird wildlife","Descent","Night",35,2,0.0571428571428571
+"Other birds","Descent","Day",158,9,0.0569620253164557
+"Other birds","Climb","Dusk",159,9,0.0566037735849057
+"Gulls and shorebirds","Landing Roll","Dawn",142,8,0.0563380281690141
+"Pigeons and doves","Take-off Run","Dawn",305,17,0.0557377049180328
+"Gulls and shorebirds","Taxi","Day",38,2,0.0526315789473684
+"Gulls and shorebirds","Departure","Day",79,4,0.0506329113924051
+"Birds of prey","Landing Roll","Dusk",160,8,0.05
+"Other birds","Climb","Day",3010,150,0.0498338870431894
+"Other birds","Take-off Run","Night",242,12,0.0495867768595041
+"Non-bird wildlife","Approach","Night",1211,59,0.0487200660611065
+"Pigeons and doves","Taxi","Day",86,4,0.0465116279069767
+"Non-bird wildlife","En Route","Night",43,2,0.0465116279069767
+"Gulls and shorebirds","Local","Day",65,3,0.0461538461538462
+"Gulls and shorebirds","Landing Roll","Day",2811,119,0.0423336890786197
+"Other birds","Departure","Night",51,2,0.0392156862745098
+"Pigeons and doves","Arrival","Day",26,1,0.0384615384615385
+"Pigeons and doves","Landing Roll","Night",237,9,0.0379746835443038
+"Pigeons and doves","Approach","Dusk",166,6,0.036144578313253
+"Pigeons and doves","Parked","Day",28,1,0.0357142857142857
+"Other birds","Approach","Night",5022,170,0.0338510553564317
+"Gulls and shorebirds","Landing Roll","Night",626,21,0.0335463258785942
+"Non-bird wildlife","Departure","Night",30,1,0.0333333333333333
+"Pigeons and doves","Landing Roll","Day",2256,74,0.0328014184397163
+"Other birds","Approach","Dawn",338,11,0.0325443786982249
+"Other birds","Approach","Dusk",624,20,0.032051282051282
+"Other birds","Take-off Run","Dusk",291,9,0.0309278350515464
+"Birds of prey","Taxi","Day",36,1,0.0277777777777778
+"Pigeons and doves","Landing Roll","Dawn",122,3,0.0245901639344262
+"Other birds","Approach","Day",8792,215,0.0244540491355778
+"Other birds","Take-off Run","Dawn",375,9,0.024
+"Gulls and shorebirds","Landing Roll","Dusk",237,5,0.0210970464135021
+"Pigeons and doves","Approach","Dawn",98,2,0.0204081632653061
+"Other birds","Take-off Run","Day",7072,142,0.020079185520362
+"Other birds","Arrival","Day",160,3,0.01875
+"Pigeons and doves","Landing Roll","Dusk",277,5,0.0180505415162455
+"Other birds","Landing Roll","Dusk",497,8,0.0160965794768612
+"Other birds","Departure","Day",348,5,0.014367816091954
+"Other birds","Taxi","Day",74,1,0.0135135135135135
+"Other birds","Landing Roll","Dawn",149,2,0.0134228187919463
+"Other birds","Landing Roll","Day",9027,120,0.0132934529744101
+"Other birds","Landing Roll","Night",668,6,0.00898203592814371
+"Other birds","Local","Day",235,2,0.00851063829787234
+"Pigeons and doves","Local","Day",61,0,0
+"Gulls and shorebirds","Taxi","Night",26,0,0
+"Gulls and shorebirds","Parked","Day",21,0,0
+"Non-bird wildlife","Departure","Day",18,0,0
+"Other birds","Descent","Dusk",18,0,0
+"Other birds","Local","Dusk",18,0,0
+"Pigeons and doves","Taxi","Night",17,0,0
+"Other birds","Descent","Dawn",16,0,0
+"Other birds","Taxi","Night",16,0,0
+"Water birds","Parked","Day",12,0,0
+"Other birds","Departure","Dawn",11,0,0
+"Non-bird wildlife","Taxi","Dawn",8,0,0
+"Other birds","Departure","Dusk",8,0,0
+"Pigeons and doves","Arrival","Night",8,0,0
+"Pigeons and doves","Departure","Dawn",8,0,0
+"Gulls and shorebirds","Arrival","Night",7,0,0
+"Other birds","Parked","Day",7,0,0
+"Birds of prey","Taxi","Night",6,0,0
+"Other birds","Arrival","Dusk",6,0,0
+"Pigeons and doves","Departure","Dusk",6,0,0
+"Pigeons and doves","Local","Dusk",6,0,0
+"Gulls and shorebirds","Departure","Dawn",5,0,0
+"Other birds","Taxi","Dawn",5,0,0
+"Pigeons and doves","Arrival","Dusk",5,0,0
+"Pigeons and doves","Departure","Night",5,0,0
+"Non-bird wildlife","Local","Dusk",4,0,0
+"Other birds","Arrival","Dawn",4,0,0
+"Other birds","Local","Dawn",4,0,0
+"Other birds","Taxi","Dusk",4,0,0
+"Pigeons and doves","Descent","Dawn",4,0,0
+"Pigeons and doves","Local","Night",4,0,0
+"Birds of prey","Departure","Dawn",3,0,0
+"Birds of prey","Departure","Dusk",3,0,0
+"Birds of prey","Parked","Day",3,0,0
+"Gulls and shorebirds","Taxi","Dawn",3,0,0
+"Non-bird wildlife","Descent","Day",3,0,0
+"Non-bird wildlife","En Route","Day",3,0,0
+"Non-bird wildlife","Taxi","Dusk",3,0,0
+"Pigeons and doves","Local","Dawn",3,0,0
+"Pigeons and doves","Taxi","Dusk",3,0,0
+"Water birds","Taxi","Dusk",3,0,0
+"Birds of prey","Local","Dusk",2,0,0
+"Gulls and shorebirds","Local","Dawn",2,0,0
+"Gulls and shorebirds","Local","Dusk",2,0,0
+"Non-bird wildlife","Departure","Dawn",2,0,0
+"Non-bird wildlife","Departure","Dusk",2,0,0
+"Pigeons and doves","Parked","Dusk",2,0,0
+"Pigeons and doves","Taxi","Dawn",2,0,0
+"Water birds","Taxi","Dawn",2,0,0
+"Birds of prey","Arrival","Dusk",1,0,0
+"Birds of prey","Descent","Dusk",1,0,0
+"Birds of prey","Parked","Night",1,0,0
+"Birds of prey","Taxi","Dusk",1,0,0
+"Gulls and shorebirds","Arrival","Dawn",1,0,0
+"Gulls and shorebirds","Descent","Dawn",1,0,0
+"Gulls and shorebirds","Descent","Dusk",1,0,0
+"Gulls and shorebirds","Parked","Night",1,0,0
+"Gulls and shorebirds","Taxi","Dusk",1,0,0
+"Non-bird wildlife","Descent","Dusk",1,0,0
+"Non-bird wildlife","Local","Dawn",1,0,0
+"Other birds","Parked","Dawn",1,0,0
+"Pigeons and doves","Arrival","Dawn",1,0,0
+"Pigeons and doves","Parked","Dawn",1,0,0
+"Pigeons and doves","Parked","Night",1,0,0
+"Water birds","Arrival","Dusk",1,0,0
+"Water birds","Departure","Dusk",1,0,0
+"Water birds","Local","Dawn",1,0,0
