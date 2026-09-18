@@ -1,0 +1,126 @@
+"SPECIES","LABEL_TYPE","REPORTED_STRIKES","KNOWN_DAMAGE_REPORTS","DAMAGING_STRIKES","MISSING_DAMAGE_REPORTS","DAMAGE_RATE"
+"Unknown bird - medium","Unknown/missing",39386,39386,4608,0,0.116995886863352
+"Unknown bird","Unknown/missing",37380,37380,1631,0,0.0436329588014981
+"Unknown bird - large","Unknown/missing",3986,3986,1457,0,0.365529352734571
+"Unknown bird - small","Unknown/missing",54910,54910,1424,0,0.0259333454744127
+"Gulls","Broad/ambiguous label",7666,7666,1167,0,0.152230628750326
+"Hawks","Broad/ambiguous label",1743,1743,334,0,0.19162363740677
+"Ducks","Broad/ambiguous label",979,979,318,0,0.324821246169561
+"Geese","Broad/ambiguous label",494,494,259,0,0.524291497975709
+"New World vultures","Broad/ambiguous label",433,433,247,0,0.570438799076212
+"White-headed gull complex","Broad/ambiguous label",492,492,111,0,0.225609756097561
+"Blackbirds","Broad/ambiguous label",1347,1347,86,0,0.0638455827765405
+"Ducks, geese, swans","Broad/ambiguous label",154,154,75,0,0.487012987012987
+"Doves","Broad/ambiguous label",1418,1418,59,0,0.041607898448519
+"Sparrows","Broad/ambiguous label",4405,4405,57,0,0.0129398410896708
+"Perching birds (y)","Broad/ambiguous label",1921,1921,52,0,0.0270692347735554
+"Egrets","Broad/ambiguous label",406,406,38,0,0.0935960591133005
+"Owls","Broad/ambiguous label",420,420,35,0,0.0833333333333333
+"Snow goose/Ross's goose complex","Broad/ambiguous label",47,47,32,0,0.680851063829787
+"Crows","Broad/ambiguous label",247,247,25,0,0.101214574898785
+"Raptors: Hawks, eagles, vultures, kites, osprey, falcons, caracaras","Broad/ambiguous label",85,85,25,0,0.294117647058824
+"Sandpipers, curlews, phalaropes, allies","Broad/ambiguous label",422,422,20,0,0.0473933649289099
+"Western/Clark's grebe complex","Broad/ambiguous label",37,37,19,0,0.513513513513513
+"Deer","Broad/ambiguous label",17,17,14,0,0.823529411764706
+"Grackles","Broad/ambiguous label",196,196,13,0,0.0663265306122449
+"Herons","Broad/ambiguous label",70,70,13,0,0.185714285714286
+"Unknown bird or bat","Unknown/missing",421,421,13,0,0.0308788598574822
+"Cattle","Broad/ambiguous label",12,12,12,0,1
+"Mallard/American black duck complex","Broad/ambiguous label",64,64,12,0,0.1875
+"Swallows","Broad/ambiguous label",1622,1622,12,0,0.00739827373612824
+"Unknown terrestrial mammal","Unknown/missing",46,46,12,0,0.260869565217391
+"Cuckoos","Broad/ambiguous label",56,56,9,0,0.160714285714286
+"Pigeons, doves","Broad/ambiguous label",80,80,8,0,0.1
+"Falcons, kestrels, falconets","Broad/ambiguous label",82,82,7,0,0.0853658536585366
+"Microbats","Broad/ambiguous label",1855,1855,7,0,0.00377358490566038
+"Swine (pigs)","Broad/ambiguous label",10,10,7,0,0.7
+"Tropicbirds","Broad/ambiguous label",10,10,7,0,0.7
+"Diving duck (Aythya)","Broad/ambiguous label",43,43,5,0,0.116279069767442
+"Shorebirds","Broad/ambiguous label",63,63,5,0,0.0793650793650794
+"Vesper bats","Broad/ambiguous label",389,389,5,0,0.012853470437018
+"White-/golden-crown sparrow complex","Broad/ambiguous label",188,188,5,0,0.0265957446808511
+"Blue-winged/cinnamon/green-winged teal complex","Broad/ambiguous label",9,9,4,0,0.444444444444444
+"Meadowlarks","Broad/ambiguous label",930,930,4,0,0.0043010752688172
+"Pelicans","Broad/ambiguous label",10,10,4,0,0.4
+"Thrushes","Broad/ambiguous label",70,70,4,0,0.0571428571428571
+"Eagles","Broad/ambiguous label",7,7,3,0,0.428571428571429
+"Foxes","Broad/ambiguous label",44,44,3,0,0.0681818181818182
+"Terns, noddies","Broad/ambiguous label",57,57,3,0,0.0526315789473684
+"Canids","Broad/ambiguous label",6,6,2,0,0.333333333333333
+"Crows, ravens","Broad/ambiguous label",9,9,2,0,0.222222222222222
+"Falcons, caracaras","Broad/ambiguous label",14,14,2,0,0.142857142857143
+"Finches, euphonias","Broad/ambiguous label",149,149,2,0,0.0134228187919463
+"Grebes","Broad/ambiguous label",14,14,2,0,0.142857142857143
+"Lagomorphs (rabbits, hares)","Broad/ambiguous label",16,16,2,0,0.125
+"Megabats","Broad/ambiguous label",11,11,2,0,0.181818181818182
+"Plovers","Broad/ambiguous label",116,116,2,0,0.0172413793103448
+"Swans","Broad/ambiguous label",5,5,2,0,0.4
+"Swifts","Broad/ambiguous label",27,27,2,0,0.0740740740740741
+"Alder/willow flycatcher complex","Broad/ambiguous label",90,90,1,0,0.0111111111111111
+"Bats","Broad/ambiguous label",1,1,1,0,1
+"Blackbirds, meadowlarks, orioles","Broad/ambiguous label",2,2,1,0,0.5
+"Cormorants","Broad/ambiguous label",3,3,1,0,0.333333333333333
+"Cranes","Broad/ambiguous label",2,2,1,0,0.5
+"Grouse","Broad/ambiguous label",3,3,1,0,0.333333333333333
+"Herons, egrets, bitterns","Broad/ambiguous label",16,16,1,0,0.0625
+"Kittiwakes","Broad/ambiguous label",2,2,1,0,0.5
+"Loons","Broad/ambiguous label",2,2,1,0,0.5
+"Mallard/mottled duck complex","Broad/ambiguous label",6,6,1,0,0.166666666666667
+"Mynas","Broad/ambiguous label",2,2,1,0,0.5
+"New World wood-warblers","Broad/ambiguous label",170,170,1,0,0.00588235294117647
+"Old World vultures","Broad/ambiguous label",2,2,1,0,0.5
+"Pheasants","Broad/ambiguous label",2,2,1,0,0.5
+"Pigeons","Broad/ambiguous label",34,34,1,0,0.0294117647058824
+"Plovers, lapwings","Broad/ambiguous label",15,15,1,0,0.0666666666666667
+"Ptarmigans","Broad/ambiguous label",5,5,1,0,0.2
+"Quails, pheasants","Broad/ambiguous label",4,4,1,0,0.25
+"Rails","Broad/ambiguous label",17,17,1,0,0.0588235294117647
+"Woodpeckers","Broad/ambiguous label",16,16,1,0,0.0625
+"Wrens","Broad/ambiguous label",80,80,1,0,0.0125
+"Avocets,stilts","Broad/ambiguous label",1,1,0,0,0
+"Black-headed gull complex","Broad/ambiguous label",4,4,0,0,0
+"Chickadees","Broad/ambiguous label",1,1,0,0,0
+"Flying foxes","Broad/ambiguous label",1,1,0,0,0
+"Free-tailed bats","Broad/ambiguous label",211,211,0,0,0
+"Frigatebirds","Broad/ambiguous label",1,1,0,0,0
+"Ground squirrels","Broad/ambiguous label",9,9,0,0,0
+"Gulls, terns, kittiwakes","Broad/ambiguous label",6,6,0,0,0
+"Hares","Broad/ambiguous label",10,10,0,0,0
+"Hummingbirds","Broad/ambiguous label",30,30,0,0,0
+"Ibises","Broad/ambiguous label",8,8,0,0,0
+"Kites","Broad/ambiguous label",1,1,0,0,0
+"Kites, eagles, hawks","Broad/ambiguous label",8,8,0,0,0
+"Lapwings","Broad/ambiguous label",1,1,0,0,0
+"Larks","Broad/ambiguous label",6,6,0,0,0
+"Longspurs, snow buntings","Broad/ambiguous label",2,2,0,0,0
+"Magpies","Broad/ambiguous label",1,1,0,0,0
+"Munias","Broad/ambiguous label",119,119,0,0,0
+"New World quail","Broad/ambiguous label",10,10,0,0,0
+"New world rats","Broad/ambiguous label",2,2,0,0,0
+"Nightjars","Broad/ambiguous label",32,32,0,0,0
+"Noddies","Broad/ambiguous label",9,9,0,0,0
+"Nuthatches","Broad/ambiguous label",1,1,0,0,0
+"Old World warblers","Broad/ambiguous label",1,1,0,0,0
+"Orioles","Broad/ambiguous label",6,6,0,0,0
+"Parakeets","Broad/ambiguous label",2,2,0,0,0
+"Parrots","Broad/ambiguous label",5,5,0,0,0
+"Partridges","Broad/ambiguous label",3,3,0,0,0
+"Peccaries","Broad/ambiguous label",1,1,0,0,0
+"Perching birds (z)","Broad/ambiguous label",1,1,0,0,0
+"Prairie dogs, marmots, squirrels","Broad/ambiguous label",2,2,0,0,0
+"Rabbits","Broad/ambiguous label",80,80,0,0,0
+"Reptiles","Broad/ambiguous label",1,1,0,0,0
+"Shearwaters","Broad/ambiguous label",1,1,0,0,0
+"Skunks","Broad/ambiguous label",11,11,0,0,0
+"Snakes","Broad/ambiguous label",42,42,0,0,0
+"Squirrels","Broad/ambiguous label",4,4,0,0,0
+"Storm-petrels","Broad/ambiguous label",1,1,0,0,0
+"Swift, tree-swifts, hummingbirds","Broad/ambiguous label",2,2,0,0,0
+"Thrashers","Broad/ambiguous label",3,3,0,0,0
+"Towhees","Broad/ambiguous label",1,1,0,0,0
+"Turtles","Broad/ambiguous label",168,168,0,0,0
+"Typical owls","Broad/ambiguous label",1,1,0,0,0
+"Tyrant (New World) flycatchers","Broad/ambiguous label",60,60,0,0,0
+"Vireos","Broad/ambiguous label",7,7,0,0,0
+"Waxbills, mannikins, parrotfinches","Broad/ambiguous label",4,4,0,0,0
+"Wilson/Common snipe complex","Broad/ambiguous label",1,1,0,0,0

@@ -1,0 +1,305 @@
+"SPECIES","LABEL_TYPE","REPORTED_STRIKES","KNOWN_DAMAGE_REPORTS","DAMAGING_STRIKES","MISSING_DAMAGE_REPORTS","DAMAGE_RATE","COUNT_RANK","RATE_RANK"
+"Mule deer","Named species",93,93,79,0,0.849462365591398,22,1
+"White-tailed deer","Named species",1383,1383,1131,0,0.817787418655098,1,2
+"Snow goose","Named species",205,205,135,0,0.658536585365854,15,3
+"American white pelican","Named species",39,39,25,0,0.641025641025641,55,4
+"Black vulture","Named species",426,426,273,0,0.640845070422535,8,5
+"Greater white-fronted goose","Named species",118,118,68,0,0.576271186440678,25,6
+"Common loon","Named species",60,60,33,0,0.55,49,7
+"Anhinga","Named species",89,89,47,0,0.528089887640449,34,8
+"Canvasback","Named species",38,38,20,0,0.526315789473684,62,9
+"Turkey vulture","Named species",1335,1335,628,0,0.470411985018727,3,10
+"Canada goose","Named species",2300,2300,1057,0,0.459565217391304,2,11
+"Cackling goose","Named species",48,48,22,0,0.458333333333333,58,12
+"Ring-necked duck","Named species",71,71,32,0,0.450704225352113,51,13
+"Northern pintail","Named species",312,312,134,0,0.429487179487179,16,14
+"Lesser scaup","Named species",113,113,47,0,0.415929203539823,34,15
+"Wood stork","Named species",35,35,13,0,0.371428571428571,84,16
+"Golden eagle","Named species",41,41,15,0,0.365853658536585,76,17
+"American wigeon","Named species",144,144,52,0,0.361111111111111,31,18
+"Sandhill crane","Named species",222,222,80,0,0.36036036036036,21,19
+"Blue-winged teal","Named species",118,118,42,0,0.355932203389831,38,20
+"Gadwall","Named species",156,156,55,0,0.352564102564103,29,21
+"Bald eagle","Named species",593,593,209,0,0.352445193929174,9,22
+"Brown pelican","Named species",107,107,37,0,0.345794392523364,44,23
+"Northern shoveler","Named species",170,170,58,0,0.341176470588235,28,24
+"Broad-winged hawk","Named species",73,73,24,0,0.328767123287671,56,25
+"Band-tailed pigeon","Named species",46,46,14,0,0.304347826086957,79,26
+"Double-crested cormorant","Named species",274,274,82,0,0.299270072992701,20,27
+"Wilson's phalarope","Named species",38,38,11,0,0.289473684210526,97,28
+"Wild turkey","Named species",140,140,40,0,0.285714285714286,39,29
+"Greater sage-grouse","Named species",42,42,12,0,0.285714285714286,86,29
+"Western grebe","Named species",43,43,12,0,0.27906976744186,86,31
+"Crested caracara","Named species",44,44,12,0,0.272727272727273,86,32
+"Domestic/feral dog","Named species",59,59,16,0,0.271186440677966,74,33
+"American bittern","Named species",30,30,8,0,0.266666666666667,119,34
+"Wood duck","Named species",136,136,35,0,0.257352941176471,46,35
+"Lesser yellowlegs","Named species",36,36,9,0,0.25,109,36
+"Black-bellied whistling-duck","Named species",32,32,8,0,0.25,119,36
+"Brant","Named species",78,78,19,0,0.243589743589744,66,38
+"Ruddy duck","Named species",134,134,32,0,0.238805970149254,51,39
+"Eared grebe","Named species",38,38,9,0,0.236842105263158,109,40
+"Osprey","Named species",735,735,165,0,0.224489795918367,13,41
+"Laysan albatross","Named species",37,37,8,0,0.216216216216216,119,42
+"American coot","Named species",515,515,108,0,0.209708737864078,18,43
+"Bufflehead","Named species",46,46,9,0,0.195652173913043,109,44
+"Mallard","Named species",1543,1543,301,0,0.195074530136099,7,45
+"Green-winged teal","Named species",183,183,35,0,0.191256830601093,46,46
+"Great blue heron","Named species",672,672,119,0,0.177083333333333,17,47
+"Ring-necked pheasant","Named species",116,116,20,0,0.172413793103448,62,48
+"Common raven","Named species",98,98,16,0,0.163265306122449,74,49
+"Mottled duck","Named species",41,41,6,0,0.146341463414634,132,50
+"Swainson's hawk","Named species",274,274,39,0,0.142335766423358,41,51
+"Pectoral sandpiper","Named species",89,89,12,0,0.134831460674157,86,52
+"Glaucous-winged gull","Named species",243,243,32,0,0.131687242798354,51,53
+"Yellow-billed cuckoo","Named species",183,183,24,0,0.131147540983607,56,54
+"Greater yellowlegs","Named species",46,46,6,0,0.130434782608696,132,55
+"Red-tailed hawk","Named species",4517,4517,572,0,0.126632720832411,4,56
+"Yellow-headed blackbird","Named species",40,40,5,0,0.125,147,57
+"Varied thrush","Named species",162,162,20,0,0.123456790123457,62,58
+"American black duck","Named species",103,103,12,0,0.116504854368932,86,59
+"Western gull","Named species",241,241,28,0,0.116182572614108,54,60
+"Black-headed grosbeak","Named species",52,52,6,0,0.115384615384615,132,61
+"Blue-billed white tern","Named species",38,38,4,0,0.105263157894737,158,62
+"Great horned owl","Named species",468,468,49,0,0.104700854700855,33,63
+"White ibis","Named species",48,48,5,0,0.104166666666667,147,64
+"Glaucous gull","Named species",49,49,5,0,0.102040816326531,147,65
+"Pied-billed grebe","Named species",69,69,7,0,0.101449275362319,127,66
+"California gull","Named species",366,366,37,0,0.101092896174863,44,67
+"Snowy egret","Named species",68,68,6,0,0.0882352941176471,132,68
+"Rough-legged hawk","Named species",140,140,12,0,0.0857142857142857,86,69
+"Whimbrel","Named species",35,35,3,0,0.0857142857142857,185,69
+"Snowy owl","Named species",394,394,33,0,0.083756345177665,49,71
+"Gray partridge","Named species",48,48,4,0,0.0833333333333333,158,72
+"American alligator","Named species",37,37,3,0,0.0810810810810811,185,73
+"Yellow-crowned night heron","Named species",173,173,14,0,0.0809248554913295,79,74
+"Great black-backed gull","Named species",211,211,17,0,0.0805687203791469,71,75
+"Herring gull","Named species",2243,2243,176,0,0.0784663397235845,11,76
+"Coyote","Named species",988,988,75,0,0.0759109311740891,23,77
+"Sora","Named species",185,185,14,0,0.0756756756756757,79,78
+"Short-billed gull","Named species",94,94,7,0,0.074468085106383,127,79
+"Franklin's gull","Named species",294,294,21,0,0.0714285714285714,60,80
+"Great egret","Named species",196,196,14,0,0.0714285714285714,79,80
+"American robin","Named species",2782,2782,198,0,0.0711718188353702,10,82
+"Black-billed magpie","Named species",43,43,3,0,0.0697674418604651,185,83
+"Rock pigeon","Named species",4771,4771,326,0,0.0683294906728149,5,84
+"American crow","Named species",794,794,54,0,0.0680100755667506,30,85
+"Veery","Named species",134,134,9,0,0.0671641791044776,109,86
+"Northern flicker","Named species",255,255,17,0,0.0666666666666667,71,87
+"Red-shouldered hawk","Named species",151,151,10,0,0.0662251655629139,102,88
+"Black-crowned night heron","Named species",185,185,12,0,0.0648648648648649,86,89
+"Caspian tern","Named species",62,62,4,0,0.0645161290322581,158,90
+"Wood thrush","Named species",140,140,9,0,0.0642857142857143,109,91
+"Ferruginous hawk","Named species",78,78,5,0,0.0641025641025641,147,92
+"Yellow-bellied sapsucker","Named species",235,235,15,0,0.0638297872340425,76,93
+"Ring-billed gull","Named species",2489,2489,151,0,0.0606669345118521,14,94
+"Wilson's snipe","Named species",317,317,19,0,0.0599369085173502,66,95
+"Spotted sandpiper","Named species",69,69,4,0,0.0579710144927536,158,96
+"Peregrine falcon","Named species",699,699,39,0,0.055793991416309,41,97
+"Common swift","Named species",36,36,2,0,0.0555555555555556,214,98
+"Sharp-tailed grouse","Named species",37,37,2,0,0.0540540540540541,214,99
+"Western cattle egret","Named species",1138,1138,60,0,0.0527240773286467,27,100
+"Western tanager","Named species",134,134,7,0,0.0522388059701493,127,101
+"Blue-headed vireo","Named species",58,58,3,0,0.0517241379310345,185,102
+"Dunlin","Named species",180,180,9,0,0.05,109,103
+"American woodcock","Named species",283,283,14,0,0.049469964664311,79,104
+"Cooper's hawk","Named species",249,249,12,0,0.0481927710843374,86,105
+"Green heron","Named species",65,65,3,0,0.0461538461538462,185,106
+"Swainson's thrush","Named species",983,983,45,0,0.0457782299084435,36,107
+"Violet-green swallow","Named species",66,66,3,0,0.0454545454545455,185,108
+"Brown thrasher","Named species",67,67,3,0,0.0447761194029851,185,109
+"Great crested flycatcher","Named species",67,67,3,0,0.0447761194029851,185,109
+"White-throated swift","Named species",159,159,7,0,0.0440251572327044,127,111
+"Purple martin","Named species",460,460,20,0,0.0434782608695652,62,112
+"Bonaparte's gull","Named species",95,95,4,0,0.0421052631578947,158,113
+"Black-bellied plover","Named species",313,313,12,0,0.0383386581469649,86,114
+"White-tailed kite","Named species",111,111,4,0,0.036036036036036,158,115
+"Fox sparrow","Named species",167,167,6,0,0.0359281437125748,132,116
+"Gray-cheeked thrush","Named species",114,114,4,0,0.0350877192982456,158,117
+"Rose-breasted grosbeak","Named species",87,87,3,0,0.0344827586206897,185,118
+"Eastern towhee","Named species",58,58,2,0,0.0344827586206897,214,118
+"Hoary bat","Named species",296,296,10,0,0.0337837837837838,102,120
+"Pine siskin","Named species",60,60,2,0,0.0333333333333333,214,121
+"Little blue heron","Named species",30,30,1,0,0.0333333333333333,259,121
+"Wedge-tailed shearwater","Named species",30,30,1,0,0.0333333333333333,259,121
+"Northern harrier","Named species",243,243,8,0,0.0329218106995885,119,124
+"Common tern","Named species",61,61,2,0,0.0327868852459016,214,125
+"Scarlet tanager","Named species",123,123,4,0,0.032520325203252,158,126
+"White-crowned sparrow","Named species",161,161,5,0,0.031055900621118,147,127
+"White-winged dove","Named species",200,200,6,0,0.03,132,128
+"American barn owl","Named species",2373,2373,70,0,0.0294985250737463,24,129
+"Zenaida dove","Named species",34,34,1,0,0.0294117647058824,259,130
+"Sharp-shinned hawk","Named species",70,70,2,0,0.0285714285714286,214,131
+"Western sandpiper","Named species",353,353,10,0,0.028328611898017,102,132
+"Cedar waxwing","Named species",760,760,21,0,0.0276315789473684,60,133
+"American golden-plover","Named species",368,368,10,0,0.0271739130434783,102,134
+"Least flycatcher","Named species",74,74,2,0,0.027027027027027,214,135
+"Brewer's blackbird","Named species",112,112,3,0,0.0267857142857143,185,136
+"Hermit thrush","Named species",645,645,17,0,0.0263565891472868,71,137
+"Great-tailed grackle","Named species",115,115,3,0,0.0260869565217391,185,138
+"Laughing gull","Named species",1351,1351,34,0,0.0251665433012583,48,139
+"Black skimmer","Named species",40,40,1,0,0.025,259,140
+"Gray kingbird","Named species",40,40,1,0,0.025,259,140
+"Eurasian collared dove","Named species",121,121,3,0,0.0247933884297521,185,142
+"Common grackle","Named species",408,408,10,0,0.0245098039215686,102,143
+"Lark sparrow","Named species",82,82,2,0,0.024390243902439,214,144
+"European starling","Named species",6976,6976,170,0,0.0243692660550459,12,145
+"Raccoon","Named species",207,207,5,0,0.0241545893719807,147,146
+"Common myna","Named species",168,168,4,0,0.0238095238095238,158,147
+"Yellow-breasted chat","Named species",85,85,2,0,0.0235294117647059,214,148
+"Upland sandpiper","Named species",470,470,11,0,0.0234042553191489,97,149
+"Prairie falcon","Named species",46,46,1,0,0.0217391304347826,259,150
+"Baird's sandpiper","Named species",94,94,2,0,0.0212765957446809,214,151
+"Spotted dove","Named species",294,294,6,0,0.0204081632653061,132,152
+"Buff-breasted sandpiper","Named species",100,100,2,0,0.02,214,153
+"Black-and-white warbler","Named species",153,153,3,0,0.0196078431372549,185,154
+"Warbling vireo","Named species",103,103,2,0,0.0194174757281553,214,155
+"Grasshopper sparrow","Named species",209,209,4,0,0.0191387559808612,158,156
+"Red fox","Named species",322,322,6,0,0.0186335403726708,132,157
+"Mourning dove","Named species",17908,17908,322,0,0.0179807907080634,6,158
+"Short-eared owl","Named species",1058,1058,19,0,0.0179584120982987,66,159
+"Yellow-bellied flycatcher","Named species",56,56,1,0,0.0178571428571429,259,160
+"Yellow-throated warbler","Named species",56,56,1,0,0.0178571428571429,259,160
+"Cave swallow","Named species",113,113,2,0,0.0176991150442478,214,162
+"Red-eyed vireo","Named species",573,573,10,0,0.0174520069808028,102,163
+"Semipalmated sandpiper","Named species",232,232,4,0,0.0172413793103448,158,164
+"Northern waterthrush","Named species",118,118,2,0,0.0169491525423729,214,165
+"Virginia rail","Named species",61,61,1,0,0.0163934426229508,259,166
+"Blue jay","Named species",62,62,1,0,0.0161290322580645,259,167
+"Baltimore oriole","Named species",64,64,1,0,0.015625,259,168
+"Indigo bunting","Named species",129,129,2,0,0.0155038759689922,214,169
+"Barred owl","Named species",65,65,1,0,0.0153846153846154,259,170
+"Dickcissel","Named species",65,65,1,0,0.0153846153846154,259,170
+"Sanderling","Named species",65,65,1,0,0.0153846153846154,259,170
+"Eastern kingbird","Named species",136,136,2,0,0.0147058823529412,214,173
+"Nine-banded armadillo","Named species",68,68,1,0,0.0147058823529412,259,173
+"Merlin","Named species",282,282,4,0,0.0141843971631206,158,175
+"Evening bat","Named species",142,142,2,0,0.0140845070422535,214,176
+"Northern house wren","Named species",143,143,2,0,0.013986013986014,214,177
+"Marsh wren","Named species",72,72,1,0,0.0138888888888889,259,178
+"Gray catbird","Named species",650,650,9,0,0.0138461538461538,109,179
+"Woodchuck","Named species",220,220,3,0,0.0136363636363636,185,180
+"Black-tailed jackrabbit","Named species",589,589,8,0,0.0135823429541596,119,181
+"White-throated sparrow","Named species",816,816,11,0,0.0134803921568627,97,182
+"Chipping sparrow","Named species",307,307,4,0,0.0130293159609121,158,183
+"Western meadowlark","Named species",3002,3002,39,0,0.0129913391072618,41,184
+"Northern mockingbird","Named species",233,233,3,0,0.0128755364806867,185,185
+"Snow bunting","Named species",473,473,6,0,0.0126849894291755,132,186
+"Eastern cottontail","Named species",240,240,3,0,0.0125,185,187
+"Bobolink","Named species",83,83,1,0,0.0120481927710843,259,188
+"Pacific golden-plover","Named species",1656,1656,19,0,0.0114734299516908,66,189
+"Lark bunting","Named species",176,176,2,0,0.0113636363636364,214,190
+"Burrowing owl","Named species",533,533,6,0,0.0112570356472795,132,191
+"Lincoln's sparrow","Named species",273,273,3,0,0.010989010989011,185,192
+"Lapland longspur","Named species",183,183,2,0,0.0109289617486339,214,193
+"Swamp sparrow","Named species",277,277,3,0,0.0108303249097473,185,194
+"Chimney swift","Named species",2072,2072,22,0,0.0106177606177606,58,195
+"Eastern phoebe","Named species",96,96,1,0,0.0104166666666667,259,196
+"Ovenbird","Named species",387,387,4,0,0.0103359173126615,158,197
+"Chestnut munia","Named species",97,97,1,0,0.0103092783505155,259,198
+"Field sparrow","Named species",97,97,1,0,0.0103092783505155,259,198
+"Vaux's swift","Named species",98,98,1,0,0.0102040816326531,259,200
+"Eastern wood-pewee","Named species",102,102,1,0,0.00980392156862745,259,201
+"Tennessee warbler","Named species",215,215,2,0,0.00930232558139535,214,202
+"Boat-tailed grackle","Named species",110,110,1,0,0.00909090909090909,259,203
+"Blackpoll warbler","Named species",221,221,2,0,0.00904977375565611,214,204
+"Zebra dove","Named species",556,556,5,0,0.00899280575539568,147,205
+"House sparrow","Named species",670,670,6,0,0.00895522388059702,132,206
+"Red-winged blackbird","Named species",914,914,8,0,0.0087527352297593,119,207
+"Dark-eyed junco","Named species",580,580,5,0,0.00862068965517241,147,208
+"Yellow warbler","Named species",232,232,2,0,0.00862068965517241,214,208
+"Mountain bluebird","Named species",117,117,1,0,0.00854700854700855,259,210
+"Least sandpiper","Named species",354,354,3,0,0.00847457627118644,185,211
+"Eastern meadowlark","Named species",5271,5271,43,0,0.00815784481123127,37,212
+"Blue-gray gnatcatcher","Named species",125,125,1,0,0.008,259,213
+"American redstart","Named species",252,252,2,0,0.00793650793650794,214,214
+"Wilson's warbler","Named species",254,254,2,0,0.0078740157480315,214,215
+"Northern parula","Named species",134,134,1,0,0.00746268656716418,259,216
+"Killdeer","Named species",11434,11434,84,0,0.00734651040755641,19,217
+"Brown-headed cowbird","Named species",558,558,4,0,0.00716845878136201,158,218
+"Common yellowthroat","Named species",430,430,3,0,0.00697674418604651,185,219
+"Song sparrow","Named species",587,587,4,0,0.00681431005110733,158,220
+"Eastern red bat","Named species",919,919,6,0,0.00652883569096844,132,221
+"Savannah sparrow","Named species",1869,1869,12,0,0.00642054574638844,86,222
+"House finch","Named species",324,324,2,0,0.00617283950617284,214,223
+"Brazilian free-tailed bat","Named species",1787,1787,11,0,0.00615556799104645,97,224
+"American kestrel","Named species",10482,10482,64,0,0.00610570501812631,26,225
+"Vesper sparrow","Named species",164,164,1,0,0.00609756097560976,259,226
+"Scaly-breasted munia","Named species",165,165,1,0,0.00606060606060606,259,227
+"Western kingbird","Named species",668,668,4,0,0.00598802395209581,158,228
+"Semipalmated plover","Named species",179,179,1,0,0.00558659217877095,259,229
+"Silver-haired bat","Named species",180,180,1,0,0.00555555555555556,259,230
+"Northern rough-winged swallow","Named species",186,186,1,0,0.00537634408602151,259,231
+"Common nighthawk","Named species",1541,1541,8,0,0.00519143413367943,119,232
+"Yellow-rumped warbler","Named species",982,982,5,0,0.00509164969450102,147,233
+"Horned lark","Named species",9913,9913,50,0,0.00504388177141128,32,234
+"White-tailed jackrabbit","Named species",275,275,1,0,0.00363636363636364,259,235
+"Barn swallow","Named species",11721,11721,40,0,0.0034126780991383,39,236
+"Bank swallow","Named species",963,963,3,0,0.00311526479750779,185,237
+"Cliff swallow","Named species",3679,3679,9,0,0.00244631693394944,109,238
+"Striped skunk","Named species",919,919,2,0,0.00217627856365615,214,239
+"Scissor-tailed flycatcher","Named species",469,469,1,0,0.00213219616204691,259,240
+"Ruby-crowned kinglet","Named species",471,471,1,0,0.00212314225053079,259,241
+"Virginia opossum","Named species",534,534,1,0,0.00187265917602996,259,242
+"American pipit","Named species",558,558,1,0,0.0017921146953405,259,243
+"Tree swallow","Named species",1386,1386,1,0,0.000721500721500722,259,244
+"Little brown bat","Named species",508,508,0,0,0,384,245
+"Big brown bat","Named species",404,404,0,0,0,384,245
+"Palm warbler","Named species",259,259,0,0,0,384,245
+"American goldfinch","Named species",209,209,0,0,0,384,245
+"Yellow bittern","Named species",188,188,0,0,0,384,245
+"Eurasian skylark","Named species",180,180,0,0,0,384,245
+"Orange-crowned warbler","Named species",146,146,0,0,0,384,245
+"Golden-crowned kinglet","Named species",142,142,0,0,0,384,245
+"Gopher snake","Named species",138,138,0,0,0,384,245
+"Nashville warbler","Named species",127,127,0,0,0,384,245
+"Bay-breasted warbler","Named species",126,126,0,0,0,384,245
+"Desert cottontail","Named species",115,115,0,0,0,384,245
+"Magnolia warbler","Named species",113,113,0,0,0,384,245
+"Black-throated blue warbler","Named species",112,112,0,0,0,384,245
+"Western flycatcher","Named species",112,112,0,0,0,384,245
+"Black-tailed prairie dog","Named species",104,104,0,0,0,384,245
+"Loggerhead shrike","Named species",99,99,0,0,0,384,245
+"Diamondback terrapin","Named species",95,95,0,0,0,384,245
+"Black-throated green warbler","Named species",90,90,0,0,0,384,245
+"Ruby-throated hummingbird","Named species",90,90,0,0,0,384,245
+"Cape May warbler","Named species",84,84,0,0,0,384,245
+"Chestnut-sided warbler","Named species",81,81,0,0,0,384,245
+"Common snapping turtle","Named species",73,73,0,0,0,384,245
+"Common ground dove","Named species",72,72,0,0,0,384,245
+"Brewer's sparrow","Named species",69,69,0,0,0,384,245
+"Painted turtle","Named species",68,68,0,0,0,384,245
+"Blackburnian warbler","Named species",66,66,0,0,0,384,245
+"Green iguana","Named species",63,63,0,0,0,384,245
+"Pine warbler","Named species",63,63,0,0,0,384,245
+"American tree sparrow","Named species",61,61,0,0,0,384,245
+"Gopher tortoise","Named species",59,59,0,0,0,384,245
+"American oystercatcher","Named species",58,58,0,0,0,384,245
+"Domestic/feral cat","Named species",53,53,0,0,0,384,245
+"Muskrat","Named species",53,53,0,0,0,384,245
+"Lesser nighthawk","Named species",50,50,0,0,0,384,245
+"Seminole bat","Named species",50,50,0,0,0,384,245
+"Tri-colored bat","Named species",49,49,0,0,0,384,245
+"Least tern","Named species",46,46,0,0,0,384,245
+"Ruddy turnstone","Named species",46,46,0,0,0,384,245
+"Winter wren","Named species",43,43,0,0,0,384,245
+"Canada warbler","Named species",42,42,0,0,0,384,245
+"Hammond's flycatcher","Named species",42,42,0,0,0,384,245
+"Common box turtle","Named species",41,41,0,0,0,384,245
+"Eastern bluebird","Named species",40,40,0,0,0,384,245
+"MacGillivray's warbler","Named species",40,40,0,0,0,384,245
+"Say's phoebe","Named species",40,40,0,0,0,384,245
+"Townsend's warbler","Named species",40,40,0,0,0,384,245
+"Mississippi kite","Named species",39,39,0,0,0,384,245
+"Clay-colored sparrow","Named species",35,35,0,0,0,384,245
+"Purple finch","Named species",35,35,0,0,0,384,245
+"Prairie warbler","Named species",34,34,0,0,0,384,245
+"Rusty blackbird","Named species",34,34,0,0,0,384,245
+"Black noddy","Named species",32,32,0,0,0,384,245
+"Black-capped chickadee","Named species",31,31,0,0,0,384,245
+"Rufous hummingbird","Named species",31,31,0,0,0,384,245
+"Acadian flycatcher","Named species",30,30,0,0,0,384,245
+"Black drongo","Named species",30,30,0,0,0,384,245
+"Bonin petrel","Named species",30,30,0,0,0,384,245
+"Forster's tern","Named species",30,30,0,0,0,384,245
+"White-eyed vireo","Named species",30,30,0,0,0,384,245

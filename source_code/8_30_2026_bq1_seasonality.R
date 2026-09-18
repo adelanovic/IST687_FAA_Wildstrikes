@@ -4,14 +4,16 @@ library(tidyverse)
 
 data_file <- "data/clean/faa_strikes_clean.rds"
 chart_dir <- "graphs/8-30-2026"
-dir.create(chart_dir, showWarnings = FALSE)
+output_dir <- "data/data_output/seasonality"
+dir.create(chart_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 
 cat("Reading data...\n")
 faa_clean <- readRDS(data_file)
 
 selected_columns <- c(
   "INDEX_NR", "INCIDENT_DATE", "INCIDENT_MONTH", "INCIDENT_YEAR",
-  "STATE", "FAAREGION", "SPECIES",
+  "STATE", "FAAREGION", "SPECIES", "SPECIES_GROUP",
   "TIME_OF_DAY_FILLED", "PHASE_OF_FLIGHT"
 )
 
@@ -37,9 +39,9 @@ faa <- faa_clean %>%
     ),
     MIGRATION_PERIOD = factor(
       case_when(
-        INCIDENT_MONTH %in% 3:5 ~ "Spring migration",
-        INCIDENT_MONTH %in% 6:7 ~ "Summer/breeding",
-        INCIDENT_MONTH %in% 8:11 ~ "Fall migration",
+        INCIDENT_MONTH %in% 3:6  ~ "Spring migration",   
+        INCIDENT_MONTH == 7 ~ "Summer/breeding",    
+        INCIDENT_MONTH %in% 8:11 ~ "Fall migration",     
         INCIDENT_MONTH %in% c(12, 1, 2) ~ "Winter"
       ),
       levels = c("Winter", "Spring migration", "Summer/breeding", "Fall migration")
@@ -47,25 +49,7 @@ faa <- faa_clean %>%
   ) %>%
   filter(!is.na(INCIDENT_MONTH), INCIDENT_MONTH %in% 1:12)
 
-# Keep the eight most common species and group the rest.
-faa$SPECIES <- trimws(as.character(faa$SPECIES))
-
-top_species <- faa %>%
-  filter(!is.na(SPECIES), SPECIES != "") %>%
-  count(SPECIES, sort = TRUE) %>%
-  slice_head(n = 8) %>%
-  pull(SPECIES)
-
-faa <- faa %>%
-  mutate(
-    SPECIES_GROUP = case_when(
-      SPECIES %in% top_species ~ SPECIES,
-      TRUE ~ "Other species"
-    ),
-    SPECIES_GROUP = factor(SPECIES_GROUP)
-  )
-
-# Use years containing all 12 months for across-year seasonal comparisons.
+# Month coverage is descriptive, not proof of complete reporting.
 year_coverage <- faa %>%
   group_by(INCIDENT_YEAR) %>%
   summarise(
@@ -74,10 +58,10 @@ year_coverage <- faa %>%
     last_date = max(INCIDENT_DATE, na.rm = TRUE),
     .groups = "drop"
   ) %>%
-  mutate(complete_year = months_reported == 12)
+  mutate(included_in_comparisons = between(INCIDENT_YEAR, 1990, 2025))
 
 complete_years <- year_coverage %>%
-  filter(complete_year) %>%
+  filter(included_in_comparisons) %>%
   pull(INCIDENT_YEAR)
 
 faa_complete <- faa %>%
@@ -86,7 +70,7 @@ faa_complete <- faa %>%
 cat("Cleaned:", nrow(faa_clean), "rows x", ncol(faa_clean), "columns\n")
 cat("Analysis rows:", nrow(faa), "\n")
 cat("Year range:", min(faa$INCIDENT_YEAR), "-", max(faa$INCIDENT_YEAR), "\n")
-cat("Complete years:", min(complete_years), "-", max(complete_years), "\n\n")
+cat("Comparison years:", min(complete_years), "-", max(complete_years), "\n\n")
 print(year_coverage)
 
 # Overall month, season, and migration-period summaries.
@@ -113,7 +97,7 @@ p1 <- ggplot(month_tbl, aes(MONTH_NAME, strikes)) +
   geom_col(fill = "steelblue") +
   labs(
     title = "Wildlife Strikes by Month",
-    subtitle = "Complete years only",
+    subtitle = "1990-2025",
     x = "Month", y = "Number of Strikes"
   ) +
   theme_minimal()
@@ -128,7 +112,7 @@ p3 <- ggplot(migration_tbl, aes(MIGRATION_PERIOD, pct)) +
   geom_col(fill = "mediumpurple4") +
   labs(
     title = "Wildlife Strikes by Migration Period",
-    subtitle = "Migration periods are month-based approximations",
+    subtitle = "1990-2025; approximate periods span 3, 4, 1, and 4 months respectively",
     x = NULL, y = "% of Strikes"
   ) +
   theme_minimal() +
@@ -177,9 +161,11 @@ p5 <- ggplot(region_tbl, aes(MONTH_NAME, pct_of_region, group = 1)) +
 
 print(p5)
 
-# Seasonal patterns for the most common species.
+# Use the established groups, retaining missing labels separately.
 species_tbl <- faa_complete %>%
+  mutate(SPECIES_GROUP = factor(replace_na(as.character(SPECIES_GROUP), "Unknown"))) %>%
   count(SPECIES_GROUP, MONTH_NAME, name = "strikes") %>%
+  complete(SPECIES_GROUP, MONTH_NAME, fill = list(strikes = 0)) %>%
   group_by(SPECIES_GROUP) %>%
   mutate(pct_of_species = 100 * strikes / sum(strikes)) %>%
   ungroup()
@@ -190,7 +176,7 @@ p6 <- ggplot(species_tbl, aes(MONTH_NAME, pct_of_species, group = 1)) +
   facet_wrap(~ SPECIES_GROUP) +
   labs(
     title = "Seasonal Pattern by Species Group",
-    subtitle = "Eight most common species; remaining species grouped as Other",
+    subtitle = "1990-2025; established wildlife groups, including unknown categories",
     x = "Month", y = "% of Group's Strikes"
   ) +
   theme_minimal() +
@@ -199,7 +185,7 @@ p6 <- ggplot(species_tbl, aes(MONTH_NAME, pct_of_species, group = 1)) +
 print(p6)
 
 # Operational and environmental seasonal patterns.
-time_tbl <- faa %>%
+time_tbl <- faa_complete %>%
   count(TIME_OF_DAY, MONTH_NAME, name = "strikes") %>%
   group_by(TIME_OF_DAY) %>%
   mutate(pct_of_time = 100 * strikes / sum(strikes)) %>%
@@ -211,7 +197,7 @@ p7 <- ggplot(time_tbl, aes(MONTH_NAME, pct_of_time, color = TIME_OF_DAY, group =
                                 Dawn = "lightsalmon", Dusk = "mediumpurple3",
                                 Unknown = "gray60")) +
   labs(title = "Seasonal Pattern by Time of Day",
-       subtitle = "Each line's monthly percentages sum to 100%",
+       subtitle = "1990-2025",
        x = "Month", y = "% of Time-of-Day Group", color = "Time of day") +
   theme_minimal()
 print(p7)
@@ -237,10 +223,15 @@ ggsave(file.path(chart_dir, "8-30 wildlife strikes by season.png"), p2, width = 
 ggsave(file.path(chart_dir, "8-30 wildlife strikes by migration period.png"), p3, width = 9, height = 5, dpi = 300)
 ggsave(file.path(chart_dir, "8-30 wildlife strikes by month and year.png"), p4, width = 10, height = 9, dpi = 300)
 ggsave(file.path(chart_dir, "8-30 seasonal pattern by FAA region.png"), p5, width = 12, height = 8, dpi = 300)
-ggsave(file.path(chart_dir, "8-30 seasonal pattern by species group.png"), p6, width = 14, height = 9, dpi = 300)
+ggsave(file.path(chart_dir, "8-30 seasonal pattern by 17 species groups.png"), p6, width = 14, height = 12, dpi = 300)
 ggsave(file.path(chart_dir, "8-30 seasonal pattern by time of day.png"), p7, width = 10, height = 6, dpi = 300)
 ggsave(file.path(chart_dir, "8-30 seasonal pattern by phase of flight.png"), p8, width = 12, height = 8, dpi = 300)
 
-# Raw counts describe reported strikes, not per-flight risk.
-saveRDS(faa, "faa_bq1_seasonality.rds")
-cat("\nSaved faa_bq1_seasonality.rds\n")
+# Export the actual chart tables; only the year-month table includes partial 2026.
+tables <- list(month = month_tbl, season = season_tbl, migration_period = migration_tbl,
+               year_month = year_month_tbl, region = region_tbl, species_group = species_tbl,
+               time_of_day = time_tbl, phase_of_flight = phase_tbl, year_coverage = year_coverage)
+for (name in names(tables)) {
+  write.csv(tables[[name]], file.path(output_dir, paste0(name, ".csv")), row.names = FALSE)
+}
+saveRDS(faa_complete, file.path(output_dir, "faa_bq1_seasonality.rds"))
