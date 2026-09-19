@@ -10,14 +10,17 @@ mostly by checking my code for errors and suggesting changes. The business
 questions were my own, and I read the data dictionary to choose which columns
 mattered before AI was involved. I wrote the initial version of the scripts,
 picked the models, ran them, read the output, and decided which suggestions to
-keep.
+keep. Two parts of the project relied on AI more heavily than that, and I
+describe both below.
 
 ## Wildlife species grouping
 
 The species field is free text with 974 different entries, far too many to
 predict one by one. Many appear in only a few records, and others are not a
-single species at all, such as unidentified birds. I decided the species had to
-be grouped, and AI helped write the rules that sort each name into a group. The
+single species at all, such as unidentified birds. Deciding that the species had
+to be grouped was my call, but the grouping itself leaned on AI more than the
+rest of the project did. I do not have a background in taxonomy, so AI proposed
+the categories and wrote the rules that sort each species name into one. The
 first set used six broad groups: birds of prey, gulls and shorebirds, water
 birds, pigeons and doves, other birds, and non-bird wildlife. A later set in
 `9_08_2026_data_cleanup.R` uses 17 narrower groups and feeds the damage models.
@@ -25,19 +28,30 @@ birds, pigeons and doves, other birds, and non-bird wildlife. A later set in
 The first rules matched partial words and got some species wrong: `tern` matched
 `Eastern`, and `fox` labeled `Fox sparrow` a mammal. AI helped switch to
 whole-word matching and handle misleading names such as `Oriental turtle dove`
-and `Pigeon guillemot`. I exported the full species-to-group list to CSV, read
-through it, and fixed the rules wherever a species landed in the wrong group.
-Unidentified entries stay in their own groups so they are never counted as a
-known species.
+and `Pigeon guillemot`. I exported the species-to-group list to CSV and checked
+roughly the first fifty entries by hand, fixing the rules where a species landed
+in the wrong group. I did not verify all 974 entries. The less common species
+therefore rest on the AI's classification and on the whole-word rules, not on my
+own review, and any taxonomic error in the long tail would carry into the
+species-group results. Unidentified entries stay in their own groups so they are
+never counted as a known species.
 
 ## Filling in time of day
 
 `TIME_OF_DAY` was missing from 153,368 of the 351,859 records (43.6%), but many
 of those still had a raw `TIME` value. Rather than drop those records, I decided
-to work out the time of day from that field, and AI helped build it. The code
-turns `TIME`, which is formatted inconsistently, into minutes past midnight. It
-then compares that against the month's sunrise and sunset to label the record
-Day or Night, with a 30-minute window on either side for Dawn and Dusk.
+to work out the time of day from that field. That decision and the choice to
+leave unusable records blank were mine; the implementation was largely AI's. I
+asked AI to define the sunrise and sunset cutoffs and to configure the function
+that applies them. The code turns `TIME`, which is formatted inconsistently, into
+minutes past midnight. It then compares that against the month's sunrise and
+sunset to label the record Day or Night, with a 30-minute window on either side
+for Dawn and Dusk.
+
+The sunrise and sunset values are a single set of monthly averages that AI
+supplied, applied to every record regardless of airport, so the labels are
+approximate for locations well north or south of the average and near the
+boundaries between categories.
 
 This filled in 38,189 records. Records with no usable time are left blank
 instead of guessed, which is why 115,179 are still Unknown.
@@ -78,6 +92,8 @@ resulting tables and charts, and questioned outputs that appeared inconsistent
 or were difficult to interpret. This review led to revisions in data cleaning,
 model interpretation, and the presentation of results. AI-generated code and
 explanations were treated as material to evaluate, not as authoritative answers.
+Where my review was partial, as with the species groups, I have said so rather
+than implying I checked everything.
 
 The FAA data comes from voluntary strike reports, so it does not cover every
 flight or every strike. The models therefore predict outcomes within the
