@@ -4,6 +4,10 @@ library(readxl)
 INPUT  <- "C:/Users/L.Admin/Documents/ISE 687 Introduction to Data Science/Homework/Project/Data Files/FAA Wildstrike CSV.xlsx"
 OUTPUT <- "data/clean/faa_strikes_clean.rds"
 
+# Exact-name assignments; edit the lookup when reviewing a new species.
+species_lookup <- read_csv("data/reference/species_group_lookup.csv", show_col_types = FALSE)
+stopifnot(!anyDuplicated(species_lookup$SPECIES))
+
 KEEP <- c("INDEX_NR","INCIDENT_DATE","INCIDENT_MONTH","INCIDENT_YEAR","TIME",
           "TIME_OF_DAY","AIRPORT_ID","AIRPORT","LATITUDE","LONGITUDE","STATE",
           "FAAREGION","OPERATOR","AC_CLASS","AC_MASS","TYPE_ENG","NUM_ENGS",
@@ -64,25 +68,9 @@ strikes <- strikes %>%
       TRUE                          ~ "Night")),
     across(c(TIME_OF_DAY, TIME_OF_DAY_FILLED), ~ factor(.x, c("Dawn","Day","Dusk","Night"))),
     
-    sp = str_to_lower(SPECIES), SPECIES_GROUP = case_when(
-      str_starts(coalesce(SPECIES_ID, ""), "UNKB") | str_detect(sp, "^unknown bird") ~ "Unknown bird",
-      str_detect(sp, "^unknown|unidentified") ~ "Unknown",
-      str_detect(sp, "\\bbats?\\b") ~ "Bats",
-      str_detect(sp, "\\bdeer\\b|\\belk\\b|\\bmoose\\b|caribou|antelope|pronghorn") ~ "Deer",
-      str_detect(sp, "coyote|\\bfoxe?s?\\b|\\bdogs?\\b|\\bcats?\\b|skunk|raccoon|opossum|\\brabbits?\\b|\\bhares?\\b|woodchuck|groundhog|badger|beaver|muskrat|armadillo|squirrel|rodent|\\brats?\\b|\\bmouse\\b|bobcat|cougar|\\bbears?\\b|\\bpigs?\\b|\\bhogs?\\b|marmot|prairie dog|gopher|shrew|otter|mink|weasel|porcupine|mammal") ~ "Other mammals",
-      str_detect(sp, "turtle|\\bsnakes?\\b|alligator|lizard|tortoise|\\bfrogs?\\b|\\btoads?\\b") ~ "Reptiles & amphibians",
-      str_detect(sp, "nighthawk|nightjar|whip-poor-will|\\bswifts?\\b|hummingbird|kingfisher|woodpecker|flicker|sapsucker|cuckoo|roadrunner|\\bswallow|\\bmartin\\b") ~ "Other birds",
-      str_detect(sp, "\\bhawks?\\b|\\beagles?\\b|falcon|kestrel|\\bowls?\\b|osprey|harrier|vulture|merlin|\\bkites?\\b|caracara") ~ "Raptors",
-      str_detect(sp, "\\bgulls?\\b|\\bterns?\\b|kittiwake|skimmer|jaeger") ~ "Gulls & terns",
-      str_detect(sp, "\\bducks?\\b|\\bgeese\\b|\\bgoose\\b|\\bswans?\\b|\\bteal\\b|mallard|merganser|brant|wigeon|scaup|pintail|shoveler|gadwall|bufflehead|goldeneye|scoter") ~ "Waterfowl",
-      str_detect(sp, "heron|egret|\\bibis\\b|\\bcranes?\\b|\\bstork|bittern|spoonbill") ~ "Wading birds",
-      str_detect(sp, "sandpiper|\\bplover|killdeer|curlew|godwit|\\bsnipe\\b|willet|dunlin|avocet|oystercatcher|yellowlegs|sanderling|woodcock|\\bstilt\\b") ~ "Shorebirds",
-      str_detect(sp, "pelican|cormorant|\\bloons?\\b|grebe|anhinga|booby|gannet|albatross|shearwater|petrel|\\bmurre|puffin") ~ "Seabirds",
-      str_detect(sp, "\\bdoves?\\b|pigeon") ~ "Doves & pigeons",
-      str_detect(sp, "\\bcrows?\\b|\\bravens?\\b|\\bjays?\\b|magpie") ~ "Corvids",
-      str_detect(sp, "\\bquail\\b|pheasant|\\bturkey|grouse|partridge|chukar|ptarmigan") ~ "Upland game birds",
-      str_detect(sp, "sparrow|starling|blackbird|\\blark\\b|meadowlark|finch|warbler|robin|thrush|\\bwren|junco|cowbird|grackle|bunting|waxwing|chickadee|titmouse|nuthatch|oriole|tanager|catbird|mockingbird|thrasher|flycatcher|phoebe|kingbird|vireo|shrike|bluebird|grosbeak|towhee|kinglet") ~ "Perching birds",
-      is.na(sp) ~ NA_character_, TRUE ~ "Other birds"),
+    SPECIES_GROUP = if_else(is.na(SPECIES), NA_character_,
+      coalesce(species_lookup$SPECIES_GROUP[match(SPECIES, species_lookup$SPECIES)],
+               "Needs review")),
     
     DAMAGE_LEVEL = str_remove(DAMAGE_LEVEL, fixed("?")),
     DAMAGE_LEVEL = factor(if_else(is.na(DAMAGE_LEVEL) & INDICATED_DAMAGE == 0, "N", DAMAGE_LEVEL),
@@ -112,7 +100,7 @@ strikes <- strikes %>%
                               INCIDENT_MONTH %in% 3:5 ~ "Spring",
                               INCIDENT_MONTH %in% 6:8 ~ "Summer",
                               TRUE ~ "Fall"), c("Winter","Spring","Summer","Fall"))) %>%
-  select(-rg, -st, -lat, -lon, -m, -rise, -set, -sp)
+  select(-rg, -st, -lat, -lon, -m, -rise, -set)
 
 dir.create(dirname(OUTPUT), showWarnings = FALSE, recursive = TRUE)
 saveRDS(strikes, OUTPUT)

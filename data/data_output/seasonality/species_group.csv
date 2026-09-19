@@ -1,28 +1,28 @@
 "SPECIES_GROUP","MONTH_NAME","strikes","pct_of_species"
-"Bats","Jan",34,0.672335376705557
-"Bats","Feb",88,1.74016215147321
-"Bats","Mar",176,3.48032430294641
-"Bats","Apr",283,5.5962032825786
-"Bats","May",330,6.52560806802452
-"Bats","Jun",377,7.45501285347044
-"Bats","Jul",760,15.0286731263595
-"Bats","Aug",1325,26.2013051216136
-"Bats","Sep",902,17.8366620526004
-"Bats","Oct",541,10.6980423175796
-"Bats","Nov",193,3.81649199129919
-"Bats","Dec",48,0.949179355349021
-"Corvids","Jan",29,2.27450980392157
-"Corvids","Feb",38,2.98039215686275
-"Corvids","Mar",51,4
-"Corvids","Apr",65,5.09803921568627
-"Corvids","May",90,7.05882352941176
-"Corvids","Jun",178,13.9607843137255
-"Corvids","Jul",273,21.4117647058824
-"Corvids","Aug",216,16.9411764705882
-"Corvids","Sep",140,10.9803921568627
-"Corvids","Oct",117,9.17647058823529
-"Corvids","Nov",47,3.68627450980392
-"Corvids","Dec",31,2.43137254901961
+"Bats","Jan",50,0.718287602355983
+"Bats","Feb",119,1.70952449360724
+"Bats","Mar",258,3.70636402815687
+"Bats","Apr",364,5.22913374515156
+"Bats","May",451,6.47895417325097
+"Bats","Jun",538,7.72877460135038
+"Bats","Jul",1121,16.1040080448211
+"Bats","Aug",1879,26.9932480965379
+"Bats","Sep",1172,16.8366613992242
+"Bats","Oct",702,10.084757937078
+"Bats","Nov",245,3.51960925154432
+"Bats","Dec",62,0.890676626921419
+"Corvids","Jan",29,2.26917057902973
+"Corvids","Feb",38,2.97339593114241
+"Corvids","Mar",51,3.9906103286385
+"Corvids","Apr",65,5.08607198748044
+"Corvids","May",90,7.04225352112676
+"Corvids","Jun",178,13.9280125195618
+"Corvids","Jul",275,21.5179968701095
+"Corvids","Aug",216,16.9014084507042
+"Corvids","Sep",140,10.9546165884194
+"Corvids","Oct",117,9.15492957746479
+"Corvids","Nov",48,3.75586854460094
+"Corvids","Dec",31,2.42566510172144
 "Deer","Jan",79,5.17354289456451
 "Deer","Feb",71,4.64963981663392
 "Deer","Mar",77,5.04256712508186
@@ -47,102 +47,102 @@
 "Doves & pigeons","Oct",2602,10.1624746133417
 "Doves & pigeons","Nov",1741,6.79971879393845
 "Doves & pigeons","Dec",1320,5.15544446180284
-"Gulls & terns","Jan",793,4.86413543519598
-"Gulls & terns","Feb",785,4.81506471201619
-"Gulls & terns","Mar",1319,8.0905354842667
-"Gulls & terns","Apr",1816,11.1390541618107
-"Gulls & terns","May",1852,11.3598724161197
-"Gulls & terns","Jun",1616,9.91228608231614
-"Gulls & terns","Jul",1338,8.20707845181868
-"Gulls & terns","Aug",1430,8.77139176838619
-"Gulls & terns","Sep",1454,8.91860393792554
-"Gulls & terns","Oct",1612,9.88775072072625
-"Gulls & terns","Nov",1347,8.26228301539594
-"Gulls & terns","Dec",941,5.77194381402196
-"Other birds","Jan",467,1.30538085255066
-"Other birds","Feb",467,1.30538085255066
-"Other birds","Mar",832,2.3256464011181
-"Other birds","Apr",1795,5.01747030048917
-"Other birds","May",3835,10.7197763801537
-"Other birds","Jun",3558,9.94549266247379
-"Other birds","Jul",7296,20.3941299790356
-"Other birds","Aug",7647,21.3752620545073
-"Other birds","Sep",5315,14.8567435359888
-"Other birds","Oct",3098,8.659678546471
-"Other birds","Nov",951,2.65828092243187
-"Other birds","Dec",514,1.43675751222921
-"Other mammals","Jan",227,5.32738793710397
-"Other mammals","Feb",221,5.18657592114527
-"Other mammals","Mar",290,6.80591410467026
-"Other mammals","Apr",254,5.96104200891809
-"Other mammals","May",325,7.62731753109599
-"Other mammals","Jun",436,10.2323398263318
-"Other mammals","Jul",470,11.0302745834311
-"Other mammals","Aug",501,11.757803332551
-"Other mammals","Sep",452,10.607838535555
-"Other mammals","Oct",481,11.2884299460221
-"Other mammals","Nov",366,8.5895329734804
-"Other mammals","Dec",238,5.58554329969491
-"Perching birds","Jan",1535,2.64363461008542
-"Perching birds","Feb",1686,2.90369247726646
-"Perching birds","Mar",2562,4.41237255442271
-"Perching birds","Apr",4030,6.94061724993111
-"Perching birds","May",6801,11.7129374483329
-"Perching birds","Jun",6118,10.5366492146597
-"Perching birds","Jul",7493,12.9047258197851
-"Perching birds","Aug",5848,10.0716450812896
-"Perching birds","Sep",6919,11.9161614769909
-"Perching birds","Oct",8737,15.0471893083494
-"Perching birds","Nov",4557,7.84823642876826
-"Perching birds","Dec",1778,3.06213833011849
-"Raptors","Jan",1343,4.72471416007036
-"Raptors","Feb",1298,4.56640281442392
-"Raptors","Mar",1766,6.21284080914688
-"Raptors","Apr",2022,7.11345646437995
-"Raptors","May",1349,4.74582233948989
-"Raptors","Jun",2011,7.07475813544415
-"Raptors","Jul",4344,15.2823218997361
-"Raptors","Aug",3887,13.674582233949
-"Raptors","Sep",3389,11.9226033421284
-"Raptors","Oct",3152,11.0888302550572
-"Raptors","Nov",2169,7.63060686015831
-"Raptors","Dec",1695,5.96306068601583
-"Reptiles & amphibians","Jan",4,0.778210116731518
-"Reptiles & amphibians","Feb",12,2.33463035019455
-"Reptiles & amphibians","Mar",12,2.33463035019455
-"Reptiles & amphibians","Apr",57,11.0894941634241
-"Reptiles & amphibians","May",114,22.1789883268482
-"Reptiles & amphibians","Jun",94,18.2879377431907
-"Reptiles & amphibians","Jul",71,13.8132295719844
-"Reptiles & amphibians","Aug",55,10.7003891050584
-"Reptiles & amphibians","Sep",44,8.56031128404669
-"Reptiles & amphibians","Oct",30,5.83657587548638
-"Reptiles & amphibians","Nov",14,2.72373540856031
-"Reptiles & amphibians","Dec",7,1.36186770428016
-"Seabirds","Jan",38,3.80761523046092
-"Seabirds","Feb",42,4.20841683366733
-"Seabirds","Mar",64,6.41282565130261
-"Seabirds","Apr",128,12.8256513026052
-"Seabirds","May",103,10.3206412825651
-"Seabirds","Jun",72,7.21442885771543
-"Seabirds","Jul",69,6.91382765531062
-"Seabirds","Aug",92,9.21843687374749
-"Seabirds","Sep",79,7.91583166332665
-"Seabirds","Oct",125,12.5250501002004
-"Seabirds","Nov",117,11.7234468937876
-"Seabirds","Dec",69,6.91382765531062
-"Shorebirds","Jan",457,2.61561355311355
-"Shorebirds","Feb",428,2.4496336996337
-"Shorebirds","Mar",608,3.47985347985348
-"Shorebirds","Apr",991,5.67193223443223
-"Shorebirds","May",861,4.92788461538461
-"Shorebirds","Jun",1131,6.47321428571429
-"Shorebirds","Jul",2568,14.6978021978022
-"Shorebirds","Aug",3594,20.5700549450549
-"Shorebirds","Sep",2864,16.3919413919414
-"Shorebirds","Oct",2105,12.047847985348
-"Shorebirds","Nov",1181,6.75938644688645
-"Shorebirds","Dec",684,3.91483516483516
+"Gulls & terns","Jan",797,4.87104265982154
+"Gulls & terns","Feb",785,4.79770199242146
+"Gulls & terns","Mar",1320,8.06747341400807
+"Gulls & terns","Apr",1818,11.1111111111111
+"Gulls & terns","May",1854,11.3311331133113
+"Gulls & terns","Jun",1625,9.9315487104266
+"Gulls & terns","Jul",1351,8.25693680479159
+"Gulls & terns","Aug",1436,8.77643319887544
+"Gulls & terns","Sep",1464,8.94756142280895
+"Gulls & terns","Oct",1620,9.9009900990099
+"Gulls & terns","Nov",1351,8.25693680479159
+"Gulls & terns","Dec",941,5.75113066862242
+"Other birds","Jan",25,0.474473334598596
+"Other birds","Feb",22,0.417536534446764
+"Other birds","Mar",92,1.74606187132283
+"Other birds","Apr",292,5.5418485481116
+"Other birds","May",653,12.3932434997153
+"Other birds","Jun",530,10.0588346934902
+"Other birds","Jul",683,12.9626115012336
+"Other birds","Aug",881,16.7204403112545
+"Other birds","Sep",1278,24.2550768646802
+"Other birds","Oct",715,13.5699373695198
+"Other birds","Nov",69,1.30954640349212
+"Other birds","Dec",29,0.550389068134371
+"Other mammals","Jan",291,5.2622061482821
+"Other mammals","Feb",301,5.44303797468354
+"Other mammals","Mar",397,7.17902350813743
+"Other mammals","Apr",373,6.74502712477396
+"Other mammals","May",460,8.31826401446655
+"Other mammals","Jun",558,10.0904159132007
+"Other mammals","Jul",652,11.7902350813743
+"Other mammals","Aug",634,11.4647377938517
+"Other mammals","Sep",584,10.5605786618445
+"Other mammals","Oct",577,10.4339963833635
+"Other mammals","Nov",414,7.48643761301989
+"Other mammals","Dec",289,5.22603978300181
+"Perching birds","Jan",1851,2.20901507285811
+"Perching birds","Feb",1983,2.36654613153843
+"Perching birds","Mar",3006,3.58741183631091
+"Perching birds","Apr",5185,6.18786772164739
+"Perching birds","May",9601,11.4579976847708
+"Perching birds","Jun",8730,10.4185313809029
+"Perching birds","Jul",13482,16.0896494933944
+"Perching birds","Aug",11773,14.0500996503288
+"Perching birds","Sep",10354,12.3566407695154
+"Perching birds","Oct",10564,12.6072583628704
+"Perching birds","Nov",5144,6.1389376200876
+"Perching birds","Dec",2120,2.53004427577483
+"Raptors","Jan",1343,4.72106021724611
+"Raptors","Feb",1299,4.56638661370267
+"Raptors","Mar",1767,6.21155130593736
+"Raptors","Apr",2026,7.12201638134074
+"Raptors","May",1351,4.74918269061764
+"Raptors","Jun",2013,7.076317362112
+"Raptors","Jul",4349,15.2880795865996
+"Raptors","Aug",3890,13.6745526769079
+"Raptors","Sep",3389,11.9133827820157
+"Raptors","Oct",3153,11.0837698175555
+"Raptors","Nov",2172,7.63525152037122
+"Raptors","Dec",1695,5.95844904559356
+"Reptiles & amphibians","Jan",7,0.97629009762901
+"Reptiles & amphibians","Feb",15,2.09205020920502
+"Reptiles & amphibians","Mar",31,4.32357043235704
+"Reptiles & amphibians","Apr",74,10.3207810320781
+"Reptiles & amphibians","May",131,18.2705718270572
+"Reptiles & amphibians","Jun",177,24.6861924686192
+"Reptiles & amphibians","Jul",100,13.9470013947001
+"Reptiles & amphibians","Aug",65,9.06555090655509
+"Reptiles & amphibians","Sep",49,6.83403068340307
+"Reptiles & amphibians","Oct",36,5.02092050209205
+"Reptiles & amphibians","Nov",21,2.92887029288703
+"Reptiles & amphibians","Dec",11,1.53417015341702
+"Seabirds","Jan",45,4.18994413407821
+"Seabirds","Feb",46,4.28305400372439
+"Seabirds","Mar",70,6.51769087523277
+"Seabirds","Apr",135,12.5698324022346
+"Seabirds","May",110,10.2420856610801
+"Seabirds","Jun",84,7.82122905027933
+"Seabirds","Jul",80,7.4487895716946
+"Seabirds","Aug",99,9.21787709497207
+"Seabirds","Sep",85,7.91433891992551
+"Seabirds","Oct",127,11.8249534450652
+"Seabirds","Nov",122,11.3594040968343
+"Seabirds","Dec",71,6.61080074487896
+"Shorebirds","Jan",465,2.61780104712042
+"Shorebirds","Feb",434,2.44328097731239
+"Shorebirds","Mar",624,3.51292011484547
+"Shorebirds","Apr",1013,5.70286550695265
+"Shorebirds","May",899,5.06108202443281
+"Shorebirds","Jun",1139,6.41220514552722
+"Shorebirds","Jul",2579,14.5189438720937
+"Shorebirds","Aug",3666,20.6384056747171
+"Shorebirds","Sep",2911,16.3879975229409
+"Shorebirds","Oct",2132,12.0024770590553
+"Shorebirds","Nov",1201,6.76124528514327
+"Shorebirds","Dec",700,3.94077576985869
 "Unknown","Jan",2,4.34782608695652
 "Unknown","Feb",5,10.8695652173913
 "Unknown","Mar",2,4.34782608695652
@@ -167,39 +167,39 @@
 "Unknown bird","Oct",19707,14.4816031392606
 "Unknown bird","Nov",9554,7.0207152987515
 "Unknown bird","Dec",4812,3.53607724697427
-"Upland game birds","Jan",29,6.48769574944072
-"Upland game birds","Feb",15,3.35570469798658
-"Upland game birds","Mar",38,8.50111856823266
-"Upland game birds","Apr",48,10.738255033557
-"Upland game birds","May",48,10.738255033557
-"Upland game birds","Jun",37,8.27740492170022
-"Upland game birds","Jul",43,9.61968680089485
-"Upland game birds","Aug",37,8.27740492170022
-"Upland game birds","Sep",46,10.2908277404922
-"Upland game birds","Oct",45,10.0671140939597
-"Upland game birds","Nov",28,6.26398210290828
-"Upland game birds","Dec",33,7.38255033557047
-"Wading birds","Jan",204,5.6322473771397
-"Wading birds","Feb",175,4.83158475980122
-"Wading birds","Mar",196,5.41137493097736
-"Wading birds","Apr",241,6.65378244064053
-"Wading birds","May",390,10.7675317504141
-"Wading birds","Jun",396,10.9331860850359
-"Wading birds","Jul",414,11.4301490889012
-"Wading birds","Aug",344,9.49751518498067
-"Wading birds","Sep",351,9.69077857537272
-"Wading birds","Oct",357,9.85643290999448
-"Wading birds","Nov",292,8.06184428492546
-"Wading birds","Dec",262,7.23357261181668
-"Waterfowl","Jan",699,8.64350191665636
-"Waterfowl","Feb",547,6.76394212934339
-"Waterfowl","Mar",941,11.6359589464573
-"Waterfowl","Apr",826,10.213923581056
-"Waterfowl","May",638,7.88920489674787
-"Waterfowl","Jun",299,3.69729195004328
-"Waterfowl","Jul",264,3.26449857796463
-"Waterfowl","Aug",485,5.99727958451836
-"Waterfowl","Sep",604,7.46877704958576
-"Waterfowl","Oct",890,11.0053171757141
-"Waterfowl","Nov",1040,12.860145913194
-"Waterfowl","Dec",854,10.5601582787189
+"Upland game birds","Jan",30,6.13496932515337
+"Upland game birds","Feb",16,3.2719836400818
+"Upland game birds","Mar",38,7.77096114519427
+"Upland game birds","Apr",55,11.2474437627812
+"Upland game birds","May",55,11.2474437627812
+"Upland game birds","Jun",41,8.38445807770961
+"Upland game birds","Jul",47,9.61145194274029
+"Upland game birds","Aug",43,8.79345603271984
+"Upland game birds","Sep",51,10.4294478527607
+"Upland game birds","Oct",48,9.8159509202454
+"Upland game birds","Nov",30,6.13496932515337
+"Upland game birds","Dec",35,7.15746421267894
+"Wading birds","Jan",222,4.97534737785746
+"Wading birds","Feb",190,4.25818018825639
+"Wading birds","Mar",253,5.67010309278351
+"Wading birds","Apr",327,7.32855221873599
+"Wading birds","May",441,9.88346033168983
+"Wading birds","Jun",410,9.18870461676378
+"Wading birds","Jul",420,9.41281936351412
+"Wading birds","Aug",393,8.80770954728821
+"Wading birds","Sep",475,10.645450470641
+"Wading birds","Oct",601,13.4692962796952
+"Wading birds","Nov",426,9.54728821156432
+"Wading birds","Dec",304,6.81308830121022
+"Waterfowl","Jan",704,8.63274064990803
+"Waterfowl","Feb",554,6.79337829552422
+"Waterfowl","Mar",948,11.6247700797057
+"Waterfowl","Apr",829,10.1655426118945
+"Waterfowl","May",640,7.84794604537094
+"Waterfowl","Jun",300,3.67872470876763
+"Waterfowl","Jul",264,3.23727774371551
+"Waterfowl","Aug",486,5.95953402820356
+"Waterfowl","Sep",607,7.4432863274065
+"Waterfowl","Oct",898,11.0116492949111
+"Waterfowl","Nov",1059,12.9858982219497
+"Waterfowl","Dec",866,10.6192519926425

@@ -28,13 +28,33 @@ birds, pigeons and doves, other birds, and non-bird wildlife. A later set in
 The first rules matched partial words and got some species wrong: `tern` matched
 `Eastern`, and `fox` labeled `Fox sparrow` a mammal. AI helped switch to
 whole-word matching and handle misleading names such as `Oriental turtle dove`
-and `Pigeon guillemot`. I exported the species-to-group list to CSV and checked
-roughly the first fifty entries by hand, fixing the rules where a species landed
-in the wrong group. I did not verify all 974 entries. The less common species
+and `Pigeon guillemot`.
+
+Because the groups came from AI rather than from my own knowledge, I checked
+them against the taxonomy instead of taking them as given. I exported the
+species-to-group list to CSV, ordered it by how many strike records each species
+accounts for, and worked through the top 50, which cover 83.4% of all records. I
+found seven labels the rules had placed in the wrong group:
+
+| Species label | Assigned group | Correct group |
+|---|---|---|
+| Microbats | Other birds | Bats |
+| Barn swallow | Other birds | Perching birds |
+| Cliff swallow | Other birds | Perching birds |
+| Swallows | Other birds | Perching birds |
+| Tree swallow | Other birds | Perching birds |
+| Bank swallow | Other birds | Perching birds |
+| Perching birds (y) | Other birds | Perching birds |
+
+Microbats are not birds at all, and the swallows are passerines that belong with
+the other perching birds rather than in the catch-all group. I brought these to
+AI and had it revise the grouping rules to correct them.
+
+I did not verify all 974 entries. The less common species below the top 50
 therefore rest on the AI's classification and on the whole-word rules, not on my
-own review, and any taxonomic error in the long tail would carry into the
-species-group results. Unidentified entries stay in their own groups so they are
-never counted as a known species.
+own review, and a taxonomic error in that long tail would carry into the
+species-group results the same way these seven did. Unidentified entries stay in
+their own groups so they are never counted as a known species.
 
 ## Filling in time of day
 
