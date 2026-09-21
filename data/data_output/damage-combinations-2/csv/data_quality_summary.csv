@@ -1,7 +1,7 @@
 "measure","reports"
-"Reports before completeness filtering",343564
-"Species without a mapped wildlife group",136129
-"Missing phase of flight",135260
-"Missing time of day",149740
+"Reports before completeness filtering",343560
+"Missing or unreviewed group",0
+"Missing reported phase group",135259
+"Missing filled time of day",111616
 "Missing damage outcome",0
-"Complete reports used",89484
+"Complete reports used",194690

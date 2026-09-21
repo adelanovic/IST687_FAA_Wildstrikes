@@ -76,7 +76,7 @@ count_plot <- count_ranking %>% head(15) %>%
   geom_text(aes(label = scales::comma(DAMAGING_STRIKES)), hjust = -0.15, size = 3.5) +
   scale_x_continuous(labels = scales::comma, expand = expansion(mult = c(0, 0.15))) +
   labs(title = "Named Species with the Most Reported Damaging Strikes",
-       subtitle = "1990-2025; broad and unknown wildlife labels shown separately",
+       subtitle = "1990-2025",
        x = "Reported damaging strikes", y = NULL) +
   theme_minimal(base_size = 12)
 
@@ -89,7 +89,7 @@ rate_plot <- rate_ranking %>% head(15) %>%
   scale_x_continuous(labels = scales::percent,
                      expand = expansion(mult = c(0, 0.4))) +
   labs(title = "Named Species with the Highest Reported Damage Rates",
-       subtitle = paste("1990-2025; at least", minimum_reports, "reports with known damage outcomes"),
+       subtitle = paste("1990-2025 | Minimum", minimum_reports, "reports"),
        x = "Damaging reports / reports with known damage outcomes", y = NULL) +
   theme_minimal(base_size = 12)
 
@@ -100,7 +100,7 @@ other_plot <- other_labels %>% head(15) %>%
                     labels = c("Broad/ambiguous label" = "Species", "Unknown/missing" = "Unknown/missing")) +
   scale_x_continuous(labels = scales::comma) +
   labs(title = "Damage Reports with Broad or Unknown Wildlife Labels",
-       subtitle = "1990-2025; reports recorded as wildlife groups or unidentified wildlife",
+       subtitle = "1990-2025",
        x = "Reported damaging strikes", y = NULL, fill = NULL) +
   theme_minimal(base_size = 12) + theme(legend.position = "bottom")
 
