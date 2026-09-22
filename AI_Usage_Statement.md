@@ -75,7 +75,7 @@ I made the data-preparation decisions for this project, including:
 
 The final models sample training records from 1990-2020 and use 2024-2025 for
 testing. Records from 2021-2023 are not used in those final scripts. The airport
-profile pipeline retains partial 2026, unlike the descriptive charts.
+profiles and descriptive charts exclude the incomplete 2026 reporting year.
 
 AI showed me `saveRDS` and `readRDS`. I use them to save the cleaned data so
 later scripts can load it right away instead of cleaning it again.
