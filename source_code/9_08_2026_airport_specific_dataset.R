@@ -10,8 +10,13 @@ modal_value <- function(x) {
   if (!length(x)) NA_character_ else names(which.max(table(x)))
 }
 
-strikes <- readRDS(INPUT)
-data_end_year <- max(strikes$INCIDENT_YEAR)
+# Stop at the last complete reporting year; 2026 ends in August and its
+# missing autumn months would understate airports whose strikes peak in fall.
+LAST_COMPLETE_YEAR <- 2025L
+
+strikes <- readRDS(INPUT) %>%
+  filter(INCIDENT_YEAR <= LAST_COMPLETE_YEAR)
+data_end_year <- LAST_COMPLETE_YEAR
 
 airport_specific <- strikes %>%
   filter(AIRPORT_ID != "ZZZZ") %>%
