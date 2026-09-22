@@ -1,40 +1,30 @@
 # Use of Artificial Intelligence
 
-This was a 10-week course and the dataset is large: over 350,000 rows and more
-than 100 variables. To finish in that time I used AI as a coding assistant,
-through Anthropic's Claude Opus 5 (Claude Code) and OpenAI's ChatGPT 5.6
-(Codex).
+I used Claude Code and OpenAI's ChatGPT/Codex as coding and writing assistants
+for this project, which analyzes over 350,000 wildlife-strike reports.
 
-AI helped me explore the FAA Wildlife Strike Database and write R scripts,
-mostly by checking my code for errors and suggesting changes. The business
-questions were my own, and I read the data dictionary to choose which columns
-mattered before AI was involved. I wrote the initial version of the scripts,
-picked the models, ran them, read the output, and decided which suggestions to
-keep. Two parts of the project relied on AI more heavily than that, and I
-describe both below.
+I developed the business questions and reviewed the data dictionary to select
+relevant variables. I wrote the report myself; AI helped write, troubleshoot
+and simplify R code, explain functions, and refine wording in text I had
+already drafted. I selected the models, ran the analyses, reviewed the results
+and decided which suggestions to keep. The main uses and limitations are
+described below.
 
 ## Wildlife species grouping
 
-The species field is free text with 974 different entries, far too many to
-predict one by one. Many appear in only a few records, and others are not a
-single species at all, such as unidentified birds. Deciding that the species had
-to be grouped was my call, but the grouping itself leaned on AI more than the
-rest of the project did. I do not have a background in taxonomy, so AI proposed
-the categories and wrote the rules that sort each species name into one. The
-first set used six broad groups: birds of prey, gulls and shorebirds, water
-birds, pigeons and doves, other birds, and non-bird wildlife. A later set in
-`9_08_2026_data_cleanup.R` uses 17 narrower groups and feeds the damage models.
+The species field contains 974 distinct labels, including uncommon species and
+unidentified wildlife. I chose to group these for analysis. AI helped propose
+categories and write the assignment rules. The final cleanup uses 17 groups
+and an exact-name lookup to make assignments visible and repeatable.
 
 The first rules matched partial words and got some species wrong: `tern` matched
 `Eastern`, and `fox` labeled `Fox sparrow` a mammal. AI helped switch to
 whole-word matching and handle misleading names such as `Oriental turtle dove`
 and `Pigeon guillemot`.
 
-Because the groups came from AI rather than from my own knowledge, I checked
-them against the taxonomy instead of taking them as given. I exported the
-species-to-group list to CSV, ordered it by how many strike records each species
-accounts for, and worked through the top 50, which cover 83.4% of all records. I
-found seven labels the rules had placed in the wrong group:
+I reviewed the species-to-group CSV against taxonomy, starting with the 50 most
+common labels, which cover 83.4% of records. This review identified seven
+incorrect assignments:
 
 | Species label | Assigned group | Correct group |
 |---|---|---|
@@ -46,24 +36,20 @@ found seven labels the rules had placed in the wrong group:
 | Bank swallow | Other birds | Perching birds |
 | Perching birds (y) | Other birds | Perching birds |
 
-Microbats are not birds at all, and the swallows are passerines that belong with
-the other perching birds rather than in the catch-all group. I brought these to
-AI and had it revise the grouping rules to correct them.
+I used these findings to revise the assignments with AI assistance.
 
-I did not verify all 974 entries. The less common species below the top 50
-therefore rest on the AI's classification and on the whole-word rules, not on my
-own review, and a taxonomic error in that long tail would carry into the
-species-group results the same way these seven did. Unidentified entries stay in
-their own groups so they are never counted as a known species.
+Additional review addressed 177 previously unmatched labels. I did not
+independently verify all 974 entries, so some grouping uncertainty remains.
+Unidentified wildlife stays in separate groups rather than being assigned a
+known identity.
 
 ## Filling in time of day
 
 `TIME_OF_DAY` was missing from 153,368 of the 351,859 records (43.6%), but many
 of those still had a raw `TIME` value. Rather than drop those records, I decided
-to work out the time of day from that field. That decision and the choice to
-leave unusable records blank were mine; the implementation was largely AI's. I
-asked AI to define the sunrise and sunset cutoffs and to configure the function
-that applies them. The code turns `TIME`, which is formatted inconsistently, into
+to estimate time of day from that field. AI supplied approximate monthly
+sunrise/sunset cutoffs and helped write the function that applies them. The code
+turns `TIME`, which is formatted inconsistently, into
 minutes past midnight. It then compares that against the month's sunrise and
 sunset to label the record Day or Night, with a 30-minute window on either side
 for Dawn and Dusk.
@@ -83,13 +69,13 @@ I made the data-preparation decisions for this project, including:
 - Selecting only the columns required for each analysis
 - Converting dates, years, months, height, and speed into appropriate types
 - Creating month, season, and approximate migration-period variables
-- Excluding the incomplete 2026 reporting year
+- Excluding the incomplete 2026 reporting year from the descriptive charts
 - Replacing missing numeric values
-- Separating training, validation, and test records
+- Separating earlier training records from later test records
 
-I split the data by date: 1990-2020 to train, 2021-2023 to validate, and
-2024-2025 to test. I did this so the models are judged on later records instead
-of a random mix of old and new reports.
+The final models sample training records from 1990-2020 and use 2024-2025 for
+testing. Records from 2021-2023 are not used in those final scripts. The airport
+profile pipeline retains partial 2026, unlike the descriptive charts.
 
 AI showed me `saveRDS` and `readRDS`. I use them to save the cleaned data so
 later scripts can load it right away instead of cleaning it again.
@@ -106,14 +92,10 @@ AI also helped revise and simplify R code throughout the project, including:
 
 ## Human review and responsibility
 
-AI assistance did not replace my responsibility to understand and evaluate the
-methods used in this project. I reviewed suggested code changes, examined the
-resulting tables and charts, and questioned outputs that appeared inconsistent
-or were difficult to interpret. This review led to revisions in data cleaning,
-model interpretation, and the presentation of results. AI-generated code and
-explanations were treated as material to evaluate, not as authoritative answers.
-Where my review was partial, as with the species groups, I have said so rather
-than implying I checked everything.
+I reviewed code changes, examined tables and charts, and questioned results
+that appeared inconsistent or were difficult to interpret. This led to
+revisions in cleaning, grouping and model interpretation. My review was not
+exhaustive; the remaining limitations are documented in the report.
 
 The FAA data comes from voluntary strike reports, so it does not cover every
 flight or every strike. The models therefore predict outcomes within the
